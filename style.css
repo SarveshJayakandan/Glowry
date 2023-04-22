@@ -186,7 +186,7 @@ nav ul li button{
     position: relative;
     width: calc(400px - 30px);
     height: calc(300px - 30px);
-    background: black;
+    background: rgb(255, 255, 255);
     margin: 15px;
     box-sizing: border-box;
     overflow: hidden;
@@ -220,7 +220,7 @@ nav ul li button{
     transform: translate(-50%, -50%);
     font-size: 80px;
     transition: 0.5s;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .container .box:hover .icon .fa-solid{
     font-size: 40px;
@@ -244,12 +244,12 @@ nav ul li button{
 .container .box .content h3{
     margin: 0 0 10px;
     padding: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 24px;
 }
 
 .container .box .content  p{
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
 }
