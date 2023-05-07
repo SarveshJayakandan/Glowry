@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="GLFAVICON.png">
+    <title>Welcome Back to Glowry!</title>
+    <manifest ... >
+      <uses-feature android:name="android.hardware.sensor.compass"
+                    android:required="true" />
+  </manifest>
+</head>
+<body>
+    <div class="container">
+      <img src="GLFAVICON.png">
+        <div class="text">Welcome Back!</div>
+        <form action="#" id="Form">
+            <div class="data">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter your Email ID" name="email" id="email" style="background-color:white; vertical-align:9px" required>
+            </div>
+            <div class="data">
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Enter your Password" name="password" id="password" required>
+            </div>
+          <div class="forgotpass">
+            <a href="#">Forgot Password?</a>
+          </div>
+          <div class="btn">
+            <button type="submit" onclick="signin()">Sign In</button>
+          </div>
+          <div class="signup">
+            <a href="login.html">Not a Member? Sign up now</a>
+          </div>
+        </form>
+    </div>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(140deg, rgb(72,91,255), rgb(183, 27, 194));
+    height: 100vh;
+    max-width: 700px;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background: white;
+    width: 500px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 50px
+}
+
+.container .text{
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: montserrat;
+}
+
+.container form .data{
+    width: 100%;
+    height: 45px;
+    margin: 40px 0;
+    font-family: montserrat;
+}
+.container form{
+    margin-top: -20px;
+}
+form .data label{
+    font-size: 18px;
+}
+form .data input{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    color: #202124;
+    z-index: 1;
+    border: 1px solid rgb(155, 155, 155);
+    padding: 10px;
+}
+
+form .data input:focus{
+    color: rgb(4, 2, 19);
+}
+form .forgotpass{
+    margin-top: -8px;
+}
+form .forgotpass a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: montserrat;
+}
+form .forgotpass a:hover{
+    text-decoration: underline;
+    font-family: montserrat;
+}
+form .btn{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+}
+form .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 540;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 23px;
+    background: blue;
+    border-color: rgb(113, 18, 255);
+
+}
+form .btn button:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(35, 44, 128);
+    transition: 0.2s;
+    
+}
+form .signup{
+    text-align: center;
+    font-family: montserrat;
+}
+form .signup a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: montserrat;
+}
+form .signup a:hover{
+ text-decoration: underline;
+ font-family: montserrat;
+}
+.container-2{
+   width: 700px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.container-2 img{
+    width: 230px;
+}
+img{
+    margin-left: 35%;
+    margin-bottom: 5px;
+    margin-top: -18%;
+    border-radius: 100%;
+    
+}
+
+@media only screen and (max-width:500px) {
+
+    .x.x.x{
+    max-width:100%;
+    max-height: 100%;
+    }
+}
+    </style>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!--Glowry Sign Up Form-->
+<!--Glowry 2023-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Signup</title>
+<link rel="icon" href="GLFAVICON.png">
+</head>
+
+<!--Styling-->
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600&family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,300;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+background: linear-gradient(140deg, rgb(72,91,255), rgb(183, 27, 194));
+height: 100vh;
+}
+.body{
+max-width: 730px;
+width: 100%;
+background: #ffff;
+padding: 100px 60px;
+border-radius: 50px;
+padding: 80px 90px;
+}
+
+.body .head{
+font-size: 30px;
+font-weight: 700px;
+font-family: montserrat;
+position: relative;
+margin-left: 27%;
+margin-bottom: 10px;
+}
+
+.body form .server{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+form .server .input{
+width: calc(100% / 2 - 20px);
+}
+
+.server .input input{
+height: 47px;
+width: 100%;
+}
+
+.server .input {
+font-family: montserrat;
+margin-bottom: 26px;
+}
+
+input{
+padding: 10px;
+border-radius: 5px;
+border-color: rgb(72,91,255);
+margin-top: 10px;
+margin-bottom: 1px;
+}
+
+img{
+margin-left: 40%;
+margin-bottom: 7px;
+margin-top: -23%;
+border-radius: 100%;
+}
+button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 540;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    background: blue;
+    border-color: rgb(113, 18, 255);
+    padding: 15px;
+}
+button:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(35, 44, 128);
+    transition: 0.2s ease;
+    
+}
+</style>
+
+<!--Initializing-->
+
+<body>
+
+<div class="body">
+  <img src="GLFAVICON.png">
+  <div class="head">Sign Up At Glowry</div>
+  <form action="#" onsubmit="return validateForm()">
+      <div class="server">
+
+          <!--Fill up area-->
+
+          <div class="input">
+              <label for="fullname">Name:</label>
+              <input type="text" placeholder="Enter your name" maxlength="100" id="name" required>
+          </div>
+          <div class="input">
+            <label for="fullname">Age:</label>
+            <input type="number" placeholder="Enter your age" min="9" id="age" required>
+        </div>
+          <div class="input">
+              <label for="email">E-mail:</label>
+              <input type="email" placeholder="Enter your E-mail address" id="email" required>
+          </div>
+          <div class="input">
+            <label for="contactnumber">Contact number:</label>
+            <input type="number" placeholder="Enter a valid phone number" min="1000000000" max="9999999999" id="contact" required="">
+        </div>
+          <div class="input">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Password" required>
+           </div>
+           <div class="input">
+              <label for="confirmpassword">Confirm Password:</label>
+              <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" required>
+          </div>
+          <button type="submit" onclick="signup()">Sign Up</button>
+     
+      </div>
+      
+  </form>
+
+  <!--Script for Confirming Password-->
+
+<script src="index.js"></script>
+  </div>
+</html>
