@@ -130,7 +130,7 @@ form .btn button{
     font-weight: 540;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-radius: 23px;
+    border-radius: 50px;
     background: blue;
     border-color: rgb(113, 18, 255);
 
@@ -180,6 +180,17 @@ img{
     }
 }
     </style>
-    <script src="index.js"></script>
+<script>
+    var form = document.getElementById("Form");
+form.addEventListener("submit", function(event){
+    var passwords = document.getElementById("password").value;
+    var confirmpassword = document.getElementById("confirm-password").value;
+    if (passwords !== confirmpassword) {
+        alert('Passwords do not match try again');
+        event.preventDefault();
+    }
+    
+});
+</script>
 </body>
 </html>
