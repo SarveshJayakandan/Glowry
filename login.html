@@ -85,14 +85,13 @@ border-radius: 100%;
 button{
     height: 100%;
     width: 100%;
-    border: none;
     color: rgb(255, 255, 255);
     background: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 540;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-radius: 50px;
+    border-radius: 8px;
     background: blue;
     border-color: rgb(113, 18, 255);
     padding: 15px;
@@ -112,7 +111,7 @@ button:hover{
 <div class="body">
   <img src="GLFAVICON.png">
   <div class="head">Sign Up At Glowry</div>
-  <form action="#" onsubmit="return validateForm()">
+  <form action="#" onsubmit="return validateForm()" id="Form">
       <div class="server">
 
           <!--Fill up area-->
@@ -139,16 +138,24 @@ button:hover{
            </div>
            <div class="input">
               <label for="confirmpassword">Confirm Password:</label>
-              <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" required>
+              <input type="password" id="confirm-password" name="confirmpassword" placeholder="Confirm Password" required>
           </div>
           <button type="submit" onclick="signup()">Sign Up</button>
      
       </div>
       
   </form>
-
-  <!--Script for Confirming Password-->
-
-<script src="index.js"></script>
+<script>
+  var form = document.getElementById("Form");
+form.addEventListener("submit", function(event){
+    var passwords = document.getElementById("password").value;
+    var confirmpassword = document.getElementById("confirm-password").value;
+    if (passwords !== confirmpassword) {
+        alert('Passwords do not match try again');
+        event.preventDefault();
+    }
+    
+});
+</script>
   </div>
 </html>
