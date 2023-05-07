@@ -1,1 +1,1 @@
-# Glowry Welcome to the World of Glowry!
+# Welcome to the World of Glowry!
