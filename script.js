@@ -21,6 +21,7 @@ const responses = {
   'yes':"*why is vast, *who is thatha, *aarav is banned, *who is deepa, *deepa's credit card number",
   "thanks":"You're welcome feel free to ask any queries.",
   "thank you":"You're welcome feel free to ask any queries.",
+  'no':'ok thanks!'
   
 };
 
