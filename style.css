@@ -9,7 +9,7 @@ body {
     text-align: center;
     color: #ff0000;
     font-family: montserrat;
-    font-weight: 600;
+    font-weight: bold;
   }
    .chatbot-container {
   max-width: 1323px;
@@ -22,13 +22,15 @@ body {
   }
   
   #chat-container {
-    height: 445px;
+    height: 440px;
     overflow-y: auto;
     padding: 10px;
     margin-bottom: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     font-family: montserrat;
+    font-size: 35px;
+    font-weight: 500;
   }
   
 
@@ -50,8 +52,8 @@ body {
   font-family: montserrat;
   }
 input{
-  width: 150px;
-  height: 23px;
+  width: 140px;
+  height: 30px;
 }
   .button-container {
     display: flex;
@@ -63,13 +65,14 @@ input{
   }
   .send-button,
   .clear-button {
-    padding: 13px 20px;
+    padding: 18px 20px;
     border: none;
     border-radius: 5px;
     color: #fff;
     background-color: #3708e0;
     font-size: 15px;
     cursor: pointer;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
   }
   
   .clear-button {
@@ -100,14 +103,14 @@ input{
     background-color: #f3160e;
     color: #ffffff;
     font-size: 20px;
-   
+    border-radius: 3px;
   }
   
   .chatbot {
     background-color: #3e5afa;
     color: #ffffff;
     font-size: 20px;
-  
+    border-radius: 3px;
   }
   
   .chatbot-name {
@@ -126,24 +129,23 @@ input{
     color: blue;
   }
   
-  .user-input-container input[type="text"] {
+.user-input-container input[type="text"] {
     flex-grow: 1;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-image: url("GLFAVICON.png");
     position: left;
     background-repeat: no-repeat;
-    background-size: 43px;
-    text-align: center;
+    background-size: 51px;
     font-size: 15px;
+    text-align: center;
   }
- img{
+img{
   width: 158px;
   position: absolute;
   top: 17px;
   left: 7%;
-  border-radius: 5px;
  }
