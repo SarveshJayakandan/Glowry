@@ -143,6 +143,28 @@ input{
     font-size: 15px;
     text-align: center;
   }
+ input[type="text"]:focus {
+    outline: none;
+  }
+
+  input[type="text"]::-webkit-inner-spin-button,
+  input[type="text"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="text"]::-ms-clear {
+    display: none;
+  }
+
+  input[type="text"]::-ms-reveal,
+  input[type="text"]::-ms-clear {
+    display: none !important;
+  }
+
+  input[type="text"]:hover {
+    pointer-events: none;
+  }
 img{
   width: 158px;
   position: absolute;
