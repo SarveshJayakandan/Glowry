@@ -141,7 +141,7 @@ input{
     background-repeat: no-repeat;
     background-size: 51px;
     font-size: 15px;
-    left:10%;
+    right:10%;
   }
  input[type="text"]:focus {
     outline: none;
