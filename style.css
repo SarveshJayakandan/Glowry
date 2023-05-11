@@ -141,7 +141,7 @@ input{
     background-repeat: no-repeat;
     background-size: 51px;
     font-size: 15px;
-    right:10%;
+    text-align:center;
   }
  .user-input-container input[type="text"]:focus{
       flex-grow: 1;
