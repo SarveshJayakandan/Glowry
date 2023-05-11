@@ -22,7 +22,7 @@ const responses = {
   "thanks":"You're welcome feel free to ask any queries.",
   "thank you":"You're welcome feel free to ask any queries.",
   'no':'ok thanks!'
-  
+  'why is vast':'vast is vast so vast is vast so vast vast vast!, ok bye.'
 };
 
 // Function to send user message and receive chatbot response
