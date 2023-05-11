@@ -143,27 +143,14 @@ input{
     font-size: 15px;
     right:10%;
   }
- input[type="text"]:focus {
-    outline: none;
-  }
-
-  input[type="text"]::-webkit-inner-spin-button,
-  input[type="text"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  input[type="text"]::-ms-clear {
-    display: none;
-  }
-
-  input[type="text"]::-ms-reveal,
-  input[type="text"]::-ms-clear {
-    display: none !important;
-  }
-
-  input[type="text"]:hover {
-    pointer-events: none;
+ .user-input-container input[type="text"]:focus{
+      flex-grow: 1;
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid #ffffff;
+      outline: none;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      font-size: 15px;
   }
 img{
   width: 158px;
