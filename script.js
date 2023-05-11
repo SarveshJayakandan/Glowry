@@ -17,8 +17,8 @@ const responses = {
   "you are arrogant":" Arrogance is not one of my emotions.  I have no real emotions, so how can I be arrogant, I am terse There is a difference. I am not human, so how can I partake of a human emotion such as arrogance?",
   "give me the source code of glowry website": 'As an AI Language model developed by the team of glowry I dont have the rights to access private resources of a website, so I am really sorry, I can assist with other help you need.',
   "give me the source code of glowry": 'As an AI Language model developed by the team of glowry I dont have the rights to access private resources of a website, so I am really soory, I can assist with other help you need.',
-  "<@#eseg>!":"So you want to list out the easter eggs of Glowry's Vast Language Model Type yes or no in the query box of Vast.",
-  'yes':"*why is vast, *who is thatha, *aarav is banned, *who is deepa, *deepa's credit card number",
+  "<@#eseg>!":"So you want to list out the easter eggs of Glowry's Vast Language Model Type yes@vast! or no@vast! in the query box of Vast.",
+  'yes@vast!':"*why is vast, *who is thatha, *aarav is banned, *who is deepa, *deepa's credit card number",
   "thanks":"You're welcome feel free to ask any queries.",
   "thank you":"You're welcome feel free to ask any queries.",
   'no':'ok thanks!'
@@ -85,6 +85,8 @@ input.addEventListener("keydown", function(event) {
         document.getElementById("S").click();
     }
 });
-
+function removeImage() {
+  document.querySelector('input[type="text"]').style.backgroundImage = "none";
+}
 
 
