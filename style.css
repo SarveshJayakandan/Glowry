@@ -1,160 +1,169 @@
-body {
-    background-color: #ffffff;
+*{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
     font-family: montserrat;
-  }
-  
-  .chatbot-title {
+}
+body{
+    overflow-x: hidden;
+}
+.menu{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    width: 280px;
+    background: rgb(27, 52, 85);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+}
+.menu header{
+    font-size: 50px;
     text-align: center;
-    color: #ff0000;
-    font-family: montserrat;
-    font-weight: bold;
-  }
-   .chatbot-container {
-  max-width: 1323px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  font-family: montserrat;
+    color: rgb(255, 255, 255);
+    line-height: 70px;
+    user-select: none;
+    background: rgb(27, 52, 85);
+}
+.menu ul a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 65px;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+ul li:hover a{
+    background: rgb(253, 27, 27);
+    padding-left: 50px;
+}
+.menu ul a i{
+    margin-right: 17px;
+}
+h1{
+    text-align: center;
+}
+.search-container {
+    position: fixed;
+    bottom: 2%;
+    left: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 4%;
+    left: 31%;
+    padding: 10px;
+    margin-top: 10px
   }
   
-  #chat-container {
-    height: 440px;
+  input[type="text"] {
+    width:  600px; /* Adjust the width as needed */
+    padding: 16px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 50px;
+    color: rgb(75, 75, 75);
+    outline: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 30px;
+    font-size: 23px;
+  }
+  input[type="text"]:focus{
+    border: 2px solid rgb(40, 68, 104);
+  }
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: rgb(27, 52, 85);
+  border: 2px solid transparent;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  padding: 22px 26px;
+  color: white;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(27, 52, 85);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-0.1px);
+}
+
+.button:active {
+  background-color: rgb(27, 52, 85);
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+.chat-container {
+        position: relative;
+        width: calc(100% - 280px);
+        margin-left: 280px;
+        height: calc(100vh - 200px);
+        overflow-y: auto;
+        padding-bottom: 20px;
+}  
+#chat-container {
+    height: 500px;
     overflow-y: auto;
     padding: 10px;
     margin-bottom: 20px;
     background-color: #ffffff;
-    border-radius: 10px;
     font-family: montserrat;
-    font-size: 35px;
-    font-weight: 500;
+    font-size: 23px;
+    font-weight: 400;
+    width: 1060px;
   }
-  
-
-
-.user-input-container {
+  .user-input-container {
     display: flex;
     align-items: center;
     margin-top: 20px;
     font-family: montserrat;
   }
-  
-  .user-input {
-  flex-grow: 1;
-  padding: 10px;
-  border: 1px solid #e0e0e0;
-  border-radius: 50px;
-  font-size: 20px;
-  outline: none;
-  font-family: montserrat;
-  }
-input{
-  width: 140px;
-  height: 30px;
-}
-  .button-container {
-    display: flex;
-  }
-  .send-button{
-    margin-left: 10px;
-    font-family: montserrat;
-    font-weight: 600;
-  }
-  .send-button,
-  .clear-button {
-    padding: 18px 20px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #3708e0;
-    font-size: 15px;
-    cursor: pointer;
-    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
-  }
-  
-  .clear-button {
-    background-color: #dc3545;
-    margin-left: 10px;
-    font-weight: 560;
-  }
-  .clear-button:hover {
-    background-color: #cf1225;
-  }
-  
-  .send-button:hover,
-  .clear-button:hover {
-    opacity: 2;
-  }
-  .send-button:hover{
-    background-color: blue;
-  }
-  
-  .message {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    word-wrap: break-word;
-  }
-  
   .user {
-    background-color: #f3160e;
+    background-color: rgb(253, 27, 27);
     color: #ffffff;
     font-size: 20px;
     border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
   }
   
   .chatbot {
-    background-color: #3e5afa;
+    background-color: rgb(27, 52, 85);
     color: #ffffff;
     font-size: 20px;
     border-radius: 3px;
-  }
-  
-  .chatbot-name {
-   font-weight: bolder;
-
-  }
-  .user-input-container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .user-input-container .chatbot-name {
-    margin-right: 10px;
-    font-size: 30px;
-    color: blue;
-  }
-  
-.user-input-container input[type="text"] {
-    flex-grow: 1;
     padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #ffffff;
-    outline: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-image: url("GLFAVICON.png");
-    position: left;
-    background-repeat: no-repeat;
-    background-size: 51px;
-    font-size: 15px;
-    text-align:center;
+    margin-bottom: 5px;
   }
- .user-input-container input[type="text"]:focus{
-      flex-grow: 1;
-      padding: 10px;
-      border-radius: 5px;
-      border: 2px solid #ffffff;
-      outline: none;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      font-size: 15px;
-  }
-img{
-  width: 158px;
-  position: absolute;
-  top: 17px;
-  left: 7%;
- }
+  
+   
+  
