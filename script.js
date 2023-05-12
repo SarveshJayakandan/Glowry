@@ -25,68 +25,58 @@ const responses = {
   'why is vast':'vast is vast so vast is vast so vast vast vast!, ok bye.'
 };
 
+
 // Function to send user message and receive chatbot response
-function sendMessage() {
-  const userInput = document.getElementById('user-input');
-  const chatContainer = document.getElementById('chat-container');
+function getResults() {
+    const userInput = document.getElementById('user-input');
+    const chatContainer = document.getElementById('chat-container');
 
-  // Get user input
-  const userMessage = userInput.value;
+    // Get user input
+    const userMessage = userInput.value;
 
-  // Create user message element
-  const userMessageElement = document.createElement('div');
-  userMessageElement.classList.add('message', 'user');
-  userMessageElement.textContent = userMessage;
+    // Create user message element
+    const userMessageElement = document.createElement('div');
+    userMessageElement.classList.add('message', 'user');
+    userMessageElement.textContent = userMessage;
 
-  // Append user message to chat container
-  chatContainer.appendChild(userMessageElement);
+    // Append user message to chat container
+    chatContainer.appendChild(userMessageElement);
 
-  // Clear user input
-  userInput.value = '';
+    // Clear user input
+    userInput.value = '';
 
-  // Process user input and generate chatbot response
-  const response = getChatbotResponse(userMessage);
+    // Process user input and generate chatbot response
+    const response = getChatbotResponse(userMessage);
 
-  // Create chatbot response element
-  const chatbotResponseElement = document.createElement('div');
-  chatbotResponseElement.classList.add('message', 'chatbot');
-  chatbotResponseElement.innerHTML = '<span class="chatbot-name">Vast:</span> ' + response;
-  chatbotResponseElement.textContent = response;
+    // Create chatbot response element
+    const chatbotResponseElement = document.createElement('div');
+    chatbotResponseElement.classList.add('message', 'chatbot');
+    chatbotResponseElement.innerHTML = '<span class="chatbot-name">Vast:</span> ' + response;
+    chatbotResponseElement.textContent = response;
 
-  // Append chatbot response to chat container
-  chatContainer.appendChild(chatbotResponseElement);
+    // Append chatbot response to chat container
+    chatContainer.appendChild(chatbotResponseElement);
 }
 
 // Function to generate chatbot response based on user input
 function getChatbotResponse(userInput) {
-  // Convert user input to lowercase for easier matching
-  const lowercaseInput = userInput.toLowerCase();
+    // Convert user input to lowercase for easier matching
+    const lowercaseInput = userInput.toLowerCase();
 
-  // Check if a predefined response exists for the user input
-  for (const [key, value] of Object.entries(responses)) {
-    if (lowercaseInput.includes(key)) {
-      return value;
+    // Check if a predefined response exists for the user input
+    for (const [key,value] of Object.entries(responses)) {
+        if (lowercaseInput.includes(key)) {
+            return value;
+        }
     }
-  }
 
-  // Return a default response if no predefined response matches
-  return "I'm sorry, I didn't understand that. And please make sure that you Question has the perfect grammar and are not empty query.";
+    // Return a default response if no predefined response matches
+    return "I'm sorry, I didn't understand that. And please make sure that you Question has the perfect grammar. And please do not enter empty prompts.";
 }
 
 // Function to clear the chat history
 function clearChat() {
-  const chatContainer = document.getElementById('chat-container');
-  chatContainer.innerHTML = '';
+    const chatContainer = document.getElementById('chat-container');
+    chatContainer.innerHTML = '';
 }
-var input = document.getElementById("user-input");
-input.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        document.getElementById("S").click();
-    }
-});
-function removeImage() {
-  document.querySelector('input[type="text"]').style.backgroundImage = "none";
-}
-
 
