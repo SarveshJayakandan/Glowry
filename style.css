@@ -14,14 +14,15 @@ body{
     left: 0;
     width: 280px;
     background: rgb(27, 52, 85);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 .menu header{
     font-size: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     color: rgb(255, 255, 255);
-    line-height: 70px;
+    line-height: 90px;
     user-select: none;
     background: rgb(27, 52, 85);
 }
@@ -29,17 +30,18 @@ body{
     display: block;
     width: 100%;
     height: 100%;
-    line-height: 65px;
+    line-height: 78px;
     font-size: 23px;
     color: rgb(255, 255, 255);
-    padding-left: 40px;
+    padding-left: 50px;
     box-sizing: border-box;
-    border-top: 1px solid rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-radius: 1px;
 }
 ul li:hover a{
-    background: rgb(253, 27, 27);
-    padding-left: 50px;
+    background: rgb(255, 255, 255);
+    transition: .2s;
+    padding-left: 60px;
+    color: rgb(0, 0, 0);
 }
 .menu ul a i{
     margin-right: 17px;
@@ -63,18 +65,20 @@ h1{
   }
   
   input[type="text"] {
-    width:  600px; /* Adjust the width as needed */
+    width:  650px; /* Adjust the width as needed */
     padding: 16px;
     border: 1px solid rgb(185, 185, 185);
     border-radius: 50px;
     color: rgb(75, 75, 75);
     outline: none;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    height: 30px;
-    font-size: 23px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 26px;
+    font-size: 18px;
+    padding-left: 30px;
   }
   input[type="text"]:focus{
     border: 2px solid rgb(40, 68, 104);
+    caret-color: blue;
   }
 .button {
   align-items: center;
@@ -82,7 +86,6 @@ h1{
   background-color: rgb(27, 52, 85);
   border: 2px solid transparent;
   border-radius: 50px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -103,14 +106,13 @@ h1{
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
-  padding: 22px 26px;
+  padding: 20px 26px;
   color: white;
 }
 
 .button:hover,
 .button:focus {
-  background-color: rgb(27, 52, 85);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  background-color: rgb(7, 58, 126);
 }
 
 .button:hover {
@@ -119,17 +121,17 @@ h1{
 
 .button:active {
   background-color: rgb(27, 52, 85);
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
 .chat-container {
         position: relative;
         width: calc(100% - 280px);
         margin-left: 280px;
+        margin-right: 280px;
         height: calc(100vh - 200px);
         overflow-y: auto;
         padding-bottom: 20px;
-}  
+}
 #chat-container {
     height: 500px;
     overflow-y: auto;
@@ -140,6 +142,7 @@ h1{
     font-size: 23px;
     font-weight: 400;
     width: 1060px;
+    text-align: center;
   }
   .user-input-container {
     display: flex;
@@ -148,7 +151,7 @@ h1{
     font-family: montserrat;
   }
   .user {
-    background-color: rgb(253, 27, 27);
+    background-color: rgb(255, 0, 0);
     color: #ffffff;
     font-size: 20px;
     border-radius: 3px;
@@ -164,6 +167,23 @@ h1{
     padding: 10px;
     margin-bottom: 5px;
   }
-  
-   
-  
+::-webkit-scrollbar {
+  width: 8px;
+  height: 1px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  height: 4px;
+ /* Change the color as desired */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;  /* Change the color as desired */
+  border-radius: 5px;  /* Adjust the border-radius as needed */
+  height: 1px;
+}
+.fa-solid{
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
