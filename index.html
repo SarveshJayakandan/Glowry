@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="GLFAVICON.png" type="image/x-icon">
+    <link rel="shortcut icon" href="vast.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Glory&family=Montserrat:ital,wght@0,500;1,500;1,600&family=Open+Sans&family=Poppins:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
     <title>Vast</title>
 </head>
@@ -15,18 +16,19 @@
    <div class="menu">
     <header>Vast-1</header>
     <ul>
-        <li><a href="#" onclick="clearChat()"><i class="fa-solid fa-rotate-left"></i>Reset Chat</a></li>
+        <li><a href="#" onclick="clearChat()"><i class="fa-solid fa-rotate-left"></i>Clear Chat</a></li>
         <li><a href="#"><i class="fa-solid fa-plus"></i>New Chat</a></li>
-        <li><a href="#"><i class="fa-solid fa-user"></i>Your Account</a></li>
-        <li><a href="#"><i class="fa-solid fa-trash"></i>Delete History</a></li>
+        <li><a href="#"><i class="fa-solid fa-user"></i>My Account</a></li>
+        <li><a href="#" onclick="clearChat()"><i class="fa-solid fa-trash"></i>Clear History</a></li>
     </ul>
    </div>
    <div id="chat-container" class="chat-container">
-    <div class="user-input-container"></div>
+   Vast-1 : Power Mode!!</div>
    </div>
    <div class="search-container">
-    <input type="text" id="user-input" placeholder="Enter your message." minlength="1" maxlength="100" required="">
-    <button type="submit" class="button" onclick="getResults()">Get Results</button>
+    <input type="text" id="user-input" placeholder="Enter your message." minlength="1" maxlength="100" class="hi" required>
+    <button class="button" onclick="getResults()">Get Results<i class="fa-solid fa-paper-plane" id="icon"></i></button>
+
   </div>
   
   <script src="https://kit.fontawesome.com/b6729b5f76.js" crossorigin="anonymous"></script>
