@@ -142,7 +142,7 @@ h1{
     font-size: 23px;
     font-weight: 400;
     width: 1060px;
-    text-align: center;
+    left:500px;
   }
   .user-input-container {
     display: flex;
