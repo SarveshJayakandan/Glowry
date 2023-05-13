@@ -65,7 +65,7 @@ h1{
   }
   
   input[type="text"] {
-    width:  650px; /* Adjust the width as needed */
+    width:  600px;
     padding: 16px;
     border: 1px solid rgb(185, 185, 185);
     border-radius: 50px;
