@@ -183,6 +183,9 @@ h1{
   border-radius: 5px;  /* Adjust the border-radius as needed */
   height: 1px;
 }
+::-webkit-scrollbar {
+  height: 8px;
+}
 .fa-solid{
   margin-left: 5px;
   margin-bottom: 2px;
