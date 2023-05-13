@@ -65,7 +65,7 @@ function getChatbotResponse(userInput) {
     }
 
     // Return a default response if no predefined response matches
-    return "I'm sorry, I didn't understand that. And please make sure that you Question has the perfect grammar. And please do not enter empty prompts.";
+    return "I'm sorry, I didn't understand that. And please make sure that you Question has the perfect grammar. And please do not enter empty prompts, Vast cannot process empty promts.";
 }
 
 // Function to clear the chat history
@@ -73,3 +73,15 @@ function clearChat() {
     const chatContainer = document.getElementById('chat-container');
     chatContainer.innerHTML = '';
 }
+// disableInputBox.js
+
+function disableInputBox() {
+    var inputBox = document.getElementById("user-input");
+    if (inputBox.value == "") {
+      inputBox.disabled = true;
+    } else {
+      inputBox.disabled = false;
+    }
+  }
+  var div = document.getElementById("chat-container");
+  div.style.fontSize = "50px";
