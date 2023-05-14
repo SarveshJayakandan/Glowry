@@ -11,11 +11,12 @@ body{
 .menu{
     position: fixed;
     height: 100%;
-    left: 0;
+    left: -280px;
     width: 280px;
     background: rgb(27, 52, 85);
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: all .5s ease;
 }
 .menu header{
     font-size: 50px;
@@ -74,7 +75,6 @@ h1{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 26px;
     font-size: 18px;
-    padding-left: 30px;
   }
   input[type="text"]:hover{
     border: 2px solid rgb(21, 4, 82);
@@ -194,4 +194,65 @@ img{
    width: 75px;
    height: 70px;
    padding: 8px;
+}
+#check{
+  display: none;
+}
+label #btn{
+  position: absolute;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+}
+label #cancel{
+  position: absolute;
+  cursor: pointer;
+  background: rgb(27, 52, 85);
+}
+label #cancel:hover{
+  border-radius: 10px;
+  background: rgb(54, 10, 250);
+  border-radius: 1px;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  padding: 6px 12px;
+  transition: all .5s;
+  border-radius: 1px;
+}
+label #btn:hover{
+  border-radius: 1px;
+  background: blue;
+}
+label #cancel{
+  z-index: 1111;
+  left: -240px;
+  top: 26px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding: 4px 10px;
+  transition: all .5s ease;
+}
+#check:checked ~ .menu{
+    left: 0;
+}
+#check:checked ~ label #btn{
+  left: 280px;
+  pointer-events: none;
+  opacity: 0;
+}
+#check:checked ~ label #cancel{
+  left: 10px;
+}
+h1{
+  font-size: 60px;
+  top: 100%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
