@@ -65,7 +65,7 @@ h1{
   }
   
   input[type="text"] {
-    width:  600px;
+    width:  600px; /* Adjust the width as needed */
     padding: 16px;
     border: 1px solid rgb(185, 185, 185);
     border-radius: 50px;
@@ -76,8 +76,11 @@ h1{
     font-size: 18px;
     padding-left: 30px;
   }
+  input[type="text"]:hover{
+    border: 2px solid rgb(21, 4, 82);
+}
   input[type="text"]:focus{
-    border: 2px solid rgb(40, 68, 104);
+    border: 2px solid rgb(0, 71, 165);
     caret-color: blue;
   }
 .button {
@@ -142,6 +145,8 @@ h1{
     font-size: 23px;
     font-weight: 400;
     width: 1060px;
+
+
   }
   .user-input-container {
     display: flex;
@@ -168,7 +173,6 @@ h1{
   }
 ::-webkit-scrollbar {
   width: 8px;
-  height: 1px; /* Adjust the width as needed */
 }
 
 ::-webkit-scrollbar-track {
@@ -182,10 +186,12 @@ h1{
   border-radius: 5px;  /* Adjust the border-radius as needed */
   height: 1px;
 }
-::-webkit-scrollbar {
-  height: 8px;
-}
 .fa-solid{
   margin-left: 5px;
   margin-bottom: 2px;
+}
+img{
+   width: 75px;
+   height: 70px;
+   padding: 8px;
 }
