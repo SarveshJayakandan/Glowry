@@ -82,7 +82,7 @@ function getChatbotResponse(userInput) {
     }
 
     // Return a default response if no predefined response matches
-    return "I'm sorry, I didn't understand that. Please try to rephrase your question, Vast can only process queries about ndt. Try typing *What is ndt or *what are the types of ndt or *what are the differences between Non Destructive Testing and destructive testing if any term is a new term for you, please try this explain-brief commands. even if you dont get it, you can try enroll our courses, dont worry at all we will explain you everything detaily and we will clear your doubts perfectly and with a certification.";
+    return "I'm sorry, I didn't understand that. Please try to rephrase your question, Vast can only process queries about ndt. Try typing *What is ndt or *what are the types of ndt or *what are the differences between Non Destructive Testing and destructive testing if any term is a new term for you, please try this explain-brief commands. even if you dont get it, you can try enroll our courses, dont worry at all we will explain you everything detaily and we will clear your doubts perfectly and with a certification. And once again I thank you all for your cooperation, Now I am Closing the project of glowry!";
 }
 
 // Function to clear the chat history
