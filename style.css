@@ -11,12 +11,11 @@ body{
 .menu{
     position: absolute;
     height: 100%;
-    left: -280px;
+    left: 0;
     width: 280px;
     background: rgb(27, 52, 85);
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    transition: all .5s ease;
 }
 .menu header{
     font-size: 50px;
@@ -52,7 +51,7 @@ h1{
 }
 .search-container {
   position: fixed;
-  bottom: 1%;
+  bottom: 3%;
   left: 31%; /* Adjusted the left position for center alignment */
   display: flex;
   justify-content: center;
@@ -65,18 +64,29 @@ h1{
   input[type="text"] {
     width: 600px; /* Adjust the width as needed */
     padding: 16px;
-    border: 2px solid rgb(235, 235, 235);
-    border-radius: 5px;
-    color: rgb(75, 75, 75);
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 50px;
+    color: rgb(32, 32, 32);
     outline: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     height: 26px;
     font-size: 18px;
+    font-family: montserrat;
+  }
+  input[type="text"]::placeholder{
+    color: rgb(78, 78, 78);
+  }
+  input[type="text"]:hover{
+    border: 2px solid rgb(83, 83, 83);
+  }
+  input[type="text"]:focus{
+    border: 2px solid rgb(27, 52, 85);
   }
   @media only screen and (max-width: 768px) {
     input[type="text"] {
       font-size: 16px;
-      padding: 12px;
+      padding: 16px;
+      width: fit-content;
     }
   }
 .button {
@@ -84,7 +94,7 @@ h1{
   background-clip: padding-box;
   background-color: rgb(27, 52, 85);
   border: 2px solid transparent;
-  border-radius: 3px;
+  border-radius: 50px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -94,7 +104,7 @@ h1{
   font-weight: 500;
   justify-content: center;
   line-height: 1.25;
-  margin-left: -5px;
+  margin-left: 0;
   min-height: 3rem;
   padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
@@ -197,70 +207,12 @@ img{
    height: 70px;
    padding: 8px;
 }
-#check{
-  display: none;
-}
-label #btn{
-  position: absolute;
-  cursor: pointer;
-  background: rgb(255, 255, 255);
-}
-label #cancel{
-  position: absolute;
-  cursor: pointer;
-  background: rgb(27, 52, 85);
-}
-label #cancel:hover{
-  border-radius: 10px;
-  background: rgb(241, 241, 241);
-  border-radius: 1px;
-  color: rgb(27, 52, 85);
-  border-radius: 1px;
-}
-label #btn{
-  left: 40px;
-  z-index: 1111;
-  top: 16px;
-  font-size: 35px;
-  color: rgb(0, 0, 0);
-  padding: 6px 12px;
-  transition: all .5s;
-}
-label #btn:hover{
-  border-radius: 1px;
-  background: rgb(27, 52, 85);
-  color: white;
-  border-radius: 1px;
-}
-label #cancel{
-  z-index: 1111;
-  left: -240px;
-  top: 26px;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  padding: 4px 9px;
-  transition: all .5s ease;
-}
-.menu.active {
-  left: -280px;
-}
-#check:checked ~ .menu{
-    left: 0;
-}
-#check:checked ~ label #btn{
-  left: 280px;
-  pointer-events: none;
-  opacity: 0;
-}
-#check:checked ~ label #cancel{
-  left: 10px;
-}
 h1{
   font-size: 50px;
   left: 50%;
   transform: translateX(5%);   
-  font-family: 'Poppins', sans-serif;
-  color: rgb(24, 75, 75);
+  color: rgb(27, 52, 85);
+  font-weight: bolder;
 }
 @media screen and (max-width: 768px) {
   .chat-container{
@@ -274,6 +226,6 @@ h1{
 
   .button{
     width: 100%;
-    height: 30px;
+    height: 100%;
   }
 }
