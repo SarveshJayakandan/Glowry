@@ -66,21 +66,22 @@ h1{
     padding: 16px;
     border: 1px solid rgb(196, 196, 196);
     border-radius: 50px;
-    color: rgb(32, 32, 32);
+    color: rgb(20, 34, 51);
     outline: none;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     height: 26px;
     font-size: 18px;
     font-family: montserrat;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   input[type="text"]::placeholder{
     color: rgb(78, 78, 78);
   }
   input[type="text"]:hover{
-    border: 2px solid rgb(83, 83, 83);
+    border: 1px solid rgb(100, 100, 100);
   }
   input[type="text"]:focus{
-    border: 2px solid rgb(27, 52, 85);
+    border: 2px solid rgb(17, 5, 129);
+    caret-color: blue;
   }
   @media only screen and (max-width: 768px) {
     input[type="text"] {
@@ -179,33 +180,24 @@ h1{
     padding: 10px;
     margin-bottom: 3px;
     margin-top: 3px;
+  }::-webkit-scrollbar {
+    width: 8px;
   }
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color:#ffffff;
-  height: 4px;
- /* Change the color as desired */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color:#777777;  /* Change the color as desired */
-  border-radius: 50px;  /* Adjust the border-radius as needed */
-  height: 1px;
-}
-::-webkit-scrollbar-thumb:hover{
-  color: black;
-}
+  
+  ::-webkit-scrollbar-track {
+    background-color:#ffffff;
+    height: 4px;
+   /* Change the color as desired */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:#777777;  /* Change the color as desired */
+    border-radius: 50px;  /* Adjust the border-radius as needed */
+    height: 1px;
+  }
 .fa-solid{
   margin-left: 5px;
   margin-bottom: 2px;
-}
-img{
-   width: 75px;
-   height: 70px;
-   padding: 8px;
 }
 h1{
   font-size: 50px;
