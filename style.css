@@ -51,7 +51,7 @@ h1{
 }
 .search-container {
   position: fixed;
-  bottom: 3%;
+  bottom: 3.5%;
   left: 31%; /* Adjusted the left position for center alignment */
   display: flex;
   justify-content: center;
