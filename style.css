@@ -40,7 +40,7 @@ body{
 ul li:hover a{
     background: rgb(255, 255, 255);
     transition: .2s;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
 }
 .menu ul a i{
     margin-right: 17px;
@@ -183,7 +183,7 @@ h1{
     font-family: 'Montserrat', sans-serif;
   }
   
-.fa-solid, img{
+.fa-solid{
   margin-left: 5px;
   margin-bottom: 2px;
 }
