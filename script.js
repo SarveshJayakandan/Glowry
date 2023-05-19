@@ -1,7 +1,6 @@
 // Define predefined responses for the chatbot
 const responses = {
     'hello': 'Hi there!, I am Vast. Welcome How can I be of service?',
-     'hi':'hello, I am Vast, How can I help you?',
     'how are you': 'I am doing well, thank you!',
     'what is your name': 'I am Vast. I am developed by the team of Glowry!',
     'goodbye': 'Goodbye! Have a great day!',
