@@ -40,7 +40,6 @@ body{
 ul li:hover a{
     background: rgb(255, 255, 255);
     transition: .2s;
-    padding-left: 60px;
     color: rgb(0, 0, 0);
 }
 .menu ul a i{
@@ -64,7 +63,7 @@ h1{
   input[type="text"] {
     width: 600px; /* Adjust the width as needed */
     padding: 16px;
-    border: 1px solid rgb(196, 196, 196);
+    border: 1px solid rgb(150, 150, 150);
     border-radius: 50px;
     color: rgb(20, 34, 51);
     outline: none;
@@ -184,7 +183,7 @@ h1{
     font-family: 'Montserrat', sans-serif;
   }
   
-.fa-solid{
+.fa-solid, img{
   margin-left: 5px;
   margin-bottom: 2px;
 }
@@ -209,4 +208,7 @@ h1{
     width: 100%;
     height: 100%;
   }
+}
+.fa-brands{
+  padding: 3.4px;
 }
