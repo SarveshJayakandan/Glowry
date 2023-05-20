@@ -50,8 +50,8 @@ h1{
 }
 .search-container {
   position: fixed;
-  bottom: 3.5%;
-  left: 31%; /* Adjusted the left position for center alignment */
+  bottom: 4%;
+  left: 31.4%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +73,7 @@ h1{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   input[type="text"]::placeholder{
-    color: rgb(78, 78, 78);
+    color: rgb(102, 102, 102);
   }
   input[type="text"]:hover{
     border: 1px solid rgb(100, 100, 100);
