@@ -29,6 +29,7 @@ align-items: center;
 padding: 10px;
 background: linear-gradient(140deg, rgb(72,91,255), rgb(183, 27, 194));
 height: 100vh;
+font-family: montserrat;
 }
 .body{
 max-width: 730px;
@@ -41,11 +42,12 @@ padding: 80px 90px;
 
 .body .head{
 font-size: 30px;
-font-weight: 700px;
+font-weight: 500;
 font-family: montserrat;
 position: relative;
 margin-left: 27%;
 margin-bottom: 10px;
+color: rgb(27, 52, 85);
 }
 
 .body form .server{
@@ -61,25 +63,33 @@ width: calc(100% / 2 - 20px);
 .server .input input{
 height: 47px;
 width: 100%;
+font-family: montserrat;
 }
 
 .server .input {
-font-family: montserrat;
 margin-bottom: 26px;
 }
-
+label{
+  font-size: 19px;
+  color: rgb(27, 52, 85);
+}
 input{
 padding: 10px;
-border-radius: 50px;
+border-radius: 5px;
 border-color: rgb(72,91,255);
 margin-top: 10px;
 margin-bottom: 1px;
+outline: none;
 }
-
+input::placeholder{
+  color: rgb(70, 70, 70);
+  font-size: 14px;
+  font-weight: 400;
+}
 img{
 margin-left: 40%;
-margin-bottom: 7px;
-margin-top: -23%;
+margin-bottom: 1px;
+margin-top: -21%;
 border-radius: 100%;
 }
 button{
@@ -91,7 +101,7 @@ button{
     font-weight: 540;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-radius: 50px;
+    border-radius: 5px;
     background: blue;
     border-color: rgb(113, 18, 255);
     padding: 15px;
@@ -110,7 +120,7 @@ button:hover{
 
 <div class="body">
   <img src="GLFAVICON.png">
-  <div class="head">Sign Up At Glowry!</div>
+  <div class="head">Sign Up At Glowry</div>
   <form action="#" onsubmit="return validateForm()" id="Form">
       <div class="server">
 
@@ -122,7 +132,7 @@ button:hover{
           </div>
           <div class="input">
             <label for="fullname">Age:</label>
-            <input type="number" placeholder="Enter your age" min="9" max="100" id="age" required>
+            <input type="number" placeholder="Enter your age" min="9" id="age" max="100" required>
         </div>
           <div class="input">
               <label for="email">E-mail:</label>
