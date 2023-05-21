@@ -21,10 +21,12 @@ body{
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Montserrat', sans-serif;
+
 }
 nav{
     height: 80px;
-    background: #ffffff;
+    background: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     max-width: 1349px;
 }
@@ -43,7 +45,7 @@ nav ul li{
 }
 nav ul li a{
     position: relative;
-    color: rgb(100, 100, 100);
+    color: rgb(75, 75, 75);
     font-size: 19px;
 }
 nav img{
@@ -55,8 +57,8 @@ nav img{
     
 }
 h1{
-     font-family: 'Glory', sans-serif;
-     font: 2em sans-serif;
+     font-family: montserrat;
+     font: 2em;
      font-weight: bold;
      margin-left: 5%;
      margin-top: 3%;
@@ -69,9 +71,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background: rgb(101, 116, 255);
+    background: rgb(27, 52, 85);
     border-radius: 4px;
-    transition: .1s;
+    transition: .4s ease;
     color: rgb(255, 255, 255);
 }
 p{
@@ -81,37 +83,32 @@ p{
     margin-bottom: 2%;
 }
  button {
-  color: rgb(85, 102, 255);
-  border: 6px solid rgb(85, 102, 255);
+  color: rgb(27, 52, 85);
+  border: 6px solid rgb(27, 52, 85);
   padding: 15px 550px;
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
   font-size: large;
-  border-radius: 5px;
+  border-radius: 50px;
   margin-right: 5%;
   margin-left: 5%;
   font-family: montserrat;
   margin-bottom: 50px;
+  transition: .3s ease;
 }
 button:hover{
-    background-color: rgb(85, 102, 255);
+    background-color: rgb(27, 52, 85);
     color: #ffffff;
 }
 .head img{
     width: 100%;
     height: 700px;
 }
-* {box-sizing:border-box}
-.head a:hover{
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
-}
 a{
     color: rgb(53, 53, 53);
 }
-      </style>
+</style>
 <body>
 <nav>
     <nav>
@@ -122,10 +119,10 @@ a{
        
               <ul>
                 
-                  <li><a href="#">About</a></li>
-                  <li><a href="index.html">Try Vast</a></li>
+                  <li><a href="home.html" class="active">Home</a></li>
+                  <li><a href="index.html">Feel Vast</a></li>
                   <li><a href="https://www.vnsndt.com/">Learn NDT</a></li>
-                  <li><a href="Signup.html">Account</a></li>
+                  <li><a href="Signup.html">My Account</a></li>
                 
              
                   
@@ -137,12 +134,12 @@ a{
  <div class="head">
     <img src="Glowrybg.png">
     <h1>What is Glowry?</h1> <br>
-    <i><p>Glowry is an initiative started by <b>Sarvesh Jayakandan and J.S. Sri Hari</b> on the first of May 2023. Its Ultimate Motive is to change the NDT world to a more productive and effective one, which can be experienced by learning with us in the most effective way. Glowry was started in order to enhance and organize a better world for NDT, Where everything can be organized perfectly and become even more <b>Productive</b>, you may trust us and come join to the world of Glowry. Thank You! <a>Learn More</a></p></i> <br>
+    <i><p>Glowry is an initiative started by <b>Sarvesh Jayakandan and J.S. Sri Hari</b> on the first of May 2023. Its Ultimate Motive is to change the NDT world to a more productive and effective one, which can be experienced by learning with us in the most effective way. Glowry was started in order to enhance and organize a better world for NDT, Where everything can be organized perfectly and become even more <b>Productive</b>, you may trust us and come join to the world of Glowry. Thank You!</p></i> <br>
    
     <button onclick = "window.location.href='login.html';">Join Glowry!</button>
     <h1>Why Choose Glowry?</h1> <br>
     <p><i>Glowry Is trusted by several users and memebers and who are working in the field of <b>NDT!</b> and who wants to improve their NDT skills, By leaarning with us you may experience a better way of learning NDT and excel in your jobs and business. by studying in a software or a website will not be so efficient so just blind enroll in our courses and just study better and more efficient, come do not think too much, just come and enroll. Seeking Cooperation From you, Thank You!</i></p>
-   <button onclick="window.location.href='signup.html';">Experience Glowry!</button>
+   <button onclick="window.location.href='Signup.html';">Experience Glowry!</button>
    <h1>Lets us Start our Journey to NDT! First of all What is NDT?</h1> <br>
    <i><p>Non-destructive testing (NDT) is a testing and analysis technique used by industry to evaluate the properties of a material, component, structure or system for characteristic differences or welding defects and discontinuities without causing damage to the original part. NDT is also known as non-destructive examination (NDE), non-destructive inspection (NDI) and non-destructive evaluation (NDE).</p></i>
    <button onclick="vnsndt()">Learn More!</button>
