@@ -41,6 +41,7 @@ ul li:hover a{
     background: rgb(255, 255, 255);
     transition: .2s;
     color: rgb(255, 0, 0);
+    padding-left: 60px;
 }
 .menu ul a i{
     margin-right: 17px;
@@ -50,7 +51,7 @@ h1{
 }
 .search-container {
   position: fixed;
-  bottom: 4%;
+  bottom: 5%;
   left: 31.4%;
   display: flex;
   justify-content: center;
