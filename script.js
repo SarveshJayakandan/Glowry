@@ -125,7 +125,7 @@ const responses = {
    "the time period during which penetrant remains on the surface of the test piece is called":"Dwell time",
    "the time period during which penetrant remains on the surface of the test piece":"Dwell time",
    "ok solve":"Yes, Sure I can solve questions for you, What do you want to solve?",
-    "hi":"Hello, I am Glowry's Vast Language Model for NDT, How can I assist you today?"
+    "hi":"Hello, I am Glowry's Vast Language Model for NDT, How can I assist you today?",
    "who developed you":"I was developed by SarveshJayakandan for learning NDT very easier and efficient way, I can help you with any doubts in NDT, If I could not answer your question, I am sorry, I am still learning, once I am completed, I will help you like your Virtual Assistant!",
    "who created you":"I was created by SarveshJayakandan for learning NDT very easier and efficient way, I can help you with any doubts in NDT, If I could not answer your question, I am sorry, I am still learning, once I am completed, I will help you like your Virtual Assistant!",
    "why you was created":"I was created to ensure better and safe learning for NDT by Vibrant NDT Services Pvt Ltd!",
