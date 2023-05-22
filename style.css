@@ -51,7 +51,7 @@ h1{
 }
 .search-container {
   position: fixed;
-  bottom: 5%;
+  bottom: 4.2%;
   left: 31.4%;
   display: flex;
   justify-content: center;
@@ -60,12 +60,32 @@ h1{
   margin-top: 10px;
   z-index: 2; /* Added z-index to bring the input box above the chat container */
   }
+  ::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
   
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Background color of the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Border radius of the scrollbar thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar thumb on hover */
+  }
+  
+  ::-webkit-scrollbar-thumb:focus {
+    background-color: #333; /* Color of the scrollbar thumb when focused */
+  }
   input[type="text"] {
     width: 600px; /* Adjust the width as needed */
     padding: 16px;
-    border: 1px solid rgb(150, 150, 150);
-    border-radius: 50px;
+    border: 1px solid rgb(160, 160, 160);
+    border-top-left-radius: 5px; /* Add border radius to top left corner */
+    border-bottom-left-radius: 5px;
     color: rgb(20, 34, 51);
     outline: none;
     height: 26px;
@@ -76,26 +96,12 @@ h1{
   input[type="text"]::placeholder{
     color: rgb(102, 102, 102);
   }
-  input[type="text"]:hover{
-    border: 1px solid rgb(100, 100, 100);
-  }
-  input[type="text"]:focus{
-    border: 2px solid rgb(17, 5, 129);
-    caret-color: blue;
-  }
-  @media only screen and (max-width: 768px) {
-    input[type="text"] {
-      font-size: 16px;
-      padding: 16px;
-      width: fit-content;
-    }
-  }
 .button {
   align-items: center;
   background-clip: padding-box;
   background-color: rgb(27, 52, 85);
-  border: 2px solid transparent;
-  border-radius: 50px;
+  border-top-right-radius: 5px; /* Add border radius to top left corner */
+  border-bottom-right-radius: 5px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -104,7 +110,8 @@ h1{
   font-size: 16px;
   font-weight: 500;
   justify-content: center;
-  line-height: 1.25;
+  line-height: 1.23;
+  border: none;
   margin-left: 0;
   min-height: 3rem;
   padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
@@ -116,9 +123,9 @@ h1{
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
-  padding: 20.5px 26px;
+  padding: 20.3px 26px;
   color: white;
-  left: 0.1%;
+  left: -1px;
 }
 
 .button:hover,
@@ -166,7 +173,7 @@ h1{
     background-color: rgb(248, 6, 6);
     color: #ffffff;
     font-size: 23px;
-    border-radius: 23px;
+    border-radius: 5px;
     padding: 10px;
     margin-bottom: 1px;
     margin-top: 1px;
@@ -177,7 +184,7 @@ h1{
     background-color: rgb(27, 52, 85);
     color: #ffffff;
     font-size: 23px;
-    border-radius: 23px;
+    border-radius: 5px;
     padding: 10px;
     margin-bottom: 3px;
     margin-top: 3px;
@@ -193,21 +200,16 @@ h1{
   left: 50%;
   transform: translateX(5%);   
   color: rgb(27, 52, 85);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: montserrat;
+  font-weight: 700;
 }
 @media screen and (max-width: 768px) {
-  .chat-container{
-    width: 100%;
-  }
-
   input[type="text"]{
-    width: 100%;
-    height: 30px;
+    visibility: hidden;
   }
 
   .button{
-    width: 100%;
-    height: 100%;
+   visibility: hidden;
   }
 }
 .fa-brands{
