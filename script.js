@@ -1,5 +1,6 @@
 // Define predefined responses for the chatbot
 const responses = {
+    "hi":"Hello, I am Glowry's Vast Language Model for NDT, you may ask your queries ad doubts about NDT to me, feel free to ask any queries and doubts about NDT you have!",
     'hello': 'Hi there!, I am Vast. Welcome How can I be of service?',
     'how are you': 'I am doing well, thank you!',
     'what is your name': 'I am Vast. I am developed by the team of Glowry!',
