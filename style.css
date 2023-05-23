@@ -96,6 +96,11 @@ h1{
   input[type="text"]::placeholder{
     color: rgb(102, 102, 102);
   }
+  input[type="text"]:focus{
+    caret-color: rgb(27, 52, 85);
+
+}
+
 .button {
   align-items: center;
   background-clip: padding-box;
