@@ -22,7 +22,6 @@ body{
     text-decoration: none;
     list-style: none;
     font-family: 'Montserrat', sans-serif;
-
 }
 nav{
     height: 80px;
@@ -38,9 +37,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 10px;
-   
- 
+    margin: 0 8px;
 }
 nav ul li a{
     position: relative;
@@ -79,9 +76,8 @@ h3{
 
 }
 nav ul li a{
-    padding: 7px;
-    border-radius: 1px;
-
+    padding: 8px;
+    border-radius: 2px;
 }
 
 nav ul li a:hover{
@@ -97,7 +93,32 @@ p{
     margin-bottom: 2%;
     font-family: montserrat;
 }
- button{
+nav ul li button{
+  background-color: rgb(27, 52, 85);
+  border-radius: 2px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;  
+  color: #fff;
+  cursor: pointer;
+  font-family: montserrat;
+  font-size: 18px;
+  padding: 8px 15px;
+  position: relative;
+  transition: all 250ms;
+  outline: none;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+nav ul li button:hover,nav ul li button:focus{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+nav ul li button:hover{
+    transform: translateY(-1px);
+}
+nav ul li button:active{
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+.head button{
   color: rgb(27, 52, 85);
   border: 6px solid rgb(27, 52, 85);
   padding: 15px 550px;
@@ -112,7 +133,7 @@ p{
   margin-bottom: 50px;
   transition: .3s ease;
 }
-button:hover{
+.head button:hover{
     background-color: rgb(27, 52, 85);
     color: #ffffff;
 }
@@ -166,7 +187,7 @@ a{
 }
 </style>
 <body>
-<nav>
+
     <nav>
 
       <img src="GLLOGO.png">
@@ -176,8 +197,10 @@ a{
                   <li><a href="index.html">Home</a></li>
                   <li><a href="#">About</a></li>
                   <li><a href="home.html">Feel Vast</a></li>
-                  <li><a href="https://www.vnsndt.com/">Learn NDT</a></li>
-                  <li><a href="Signup.html">My Account</a></li>
+                  <li><a href="Signup.html">Glowry NDT</a></li>
+                  <li><button onclick="window.location.href = 'login.html'">Sign Up</button></li>
+                  <li><button onclick="window.location.href = 'Signup.html'">Sign In</button></li>
+
               </ul>
           </nav>
 </nav>
@@ -185,10 +208,10 @@ a{
  <div class="head">
     <img src="Glowrybg.png">
     <h1>What is Glowry?</h1> <br>
-    <i><p>Glowry is an initiative started by <b>Sarvesh Jayakandan and J.S. Sri Hari</b> on the first of May 2023. Its Ultimate Motive is to change the NDT world to a more productive and effective one, which can be experienced by learning with us in the most effective way. Glowry was started in order to enhance and organize a better world for NDT, Where everything can be organized perfectly and become even more <b>Productive</b>, you may trust us and come join to the world of Glowry. Thank You!</p></i> <br>
-   <button onclick = "window.location.href='login.html';" class="hi">Join Glowry!</button>
+    <i><p>Glowry is an initiative started by <b>Sarvesh Jayakandan and J.S. Sri Hari</b> on the first of May 2023. Its Ultimate Motive is to change the Technology world to a more productive and effective one, Which will be experienced by this beautiful idea - Glowry where users can share and collaborate on code projects! Explore it by clicking Learn More</p></i> <br>
+   <button onclick = "window.location.href='login.html';" class="hi">Learn More!</button>
     <h1>Why Choose Glowry?</h1> <br>
-    <p><i>Glowry Is trusted by several users and memebers and who are working in the field of <b>NDT!</b> and who wants to improve their NDT skills, By leaarning with us you may experience a better way of learning NDT and excel in your jobs and business. by studying in a software or a website will not be so efficient so just blind enroll in our courses and just study better and more efficient, come do not think too much, just come and enroll. Seeking Cooperation From you, Thank You!</i></p>
+    <p><i></i></p>
    <button onclick="window.location.href='Signup.html';" class="hi">Experience Glowry!</button>
    <h1>Lets us Start our Journey to NDT! First of all What is NDT?</h1> <br>
    <p>Non-destructive testing (NDT) is a testing and analysis technique used by industry to evaluate the properties of a material, component, structure or system for characteristic differences or welding defects and discontinuities without causing damage to the original part. NDT is also known as non-destructive examination (NDE), non-destructive inspection (NDI) and non-destructive evaluation (NDE).</p></i>
@@ -215,6 +238,7 @@ a{
  </div>
  <div class="container">
     <h1 class="heading">A Few More Of NDT!</h1>
+    <p>Glowry is always a Few More always, Feel free to explore everything, everywhere all!</p>
     <div class="boxc">
         <div class="box">
             <img src="download.png">
@@ -271,5 +295,3 @@ a{
  </script>
 </body>
 </html>
-
-
