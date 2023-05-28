@@ -1,6 +1,5 @@
 <!--Glowry Sign Up Form-->
 <!--Glowry 2023-->
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -81,6 +80,10 @@ margin-top: 10px;
 margin-bottom: 1px;
 outline: none;
 }
+input:focus{
+  border-color: rgb(72,91,255);
+  border-bottom-width: 2px;
+}
 input::placeholder{
   color: rgb(70, 70, 70);
   font-size: 14px;
@@ -151,8 +154,6 @@ button:hover{
               <input type="password" id="confirm-password" name="confirmpassword" placeholder="Confirm Password" required>
           </div>
           <button type="submit" onclick="signup()">Sign Up</button>
-     
-      </div>
       
   </form>
 <script>
