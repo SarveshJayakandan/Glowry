@@ -146,7 +146,7 @@ a{
 }
 .container{
     padding: 15px 9%;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 }
 .container .heading{
     text-align: center;
@@ -185,6 +185,94 @@ a{
         padding: 20px;
     }
 }
+footer{
+  position: absolute;
+  background: #000000;
+  width: 100%;
+  left: 0;
+  bottom: -3800px;
+}
+footer .bottom-details{
+  width: 100%;
+  background: rgb(27, 52, 85);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  opacity: 1;
+  text-decoration: none;
+}
+.bottom-details .bottom_text .hi:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text .hello:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content .top .logo-details{
+    font-size: 26px;
+  }
+  .content .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 16px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}
 </style>
 <body>
 
@@ -195,8 +283,9 @@ a{
               <ul>
                 
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="#">About</a></li>
+                  <li><a href="about.html">About</a></li>
                   <li><a href="home.html">Feel Vast</a></li>
+                  <li><a href="https://www.vnsndt.com/">Feel Vibrant</a></li>
                   <li><button onclick="window.location.href = 'login.html'">Sign Up</button></li>
                   <li><button onclick="window.location.href = 'Signup.html'">Sign In</button></li>
 
@@ -207,10 +296,10 @@ a{
  <div class="head">
     <img src="Glowrybg.png">
     <h1>What is Glowry?</h1> <br>
-    <i><p>Glowry is an initiative started by <b>Sarvesh Jayakandan and J.S. Sri Hari</b> on the first of May 2023. Its Ultimate Motive is to change the NDT world to a more productive and effective one, Which will be experienced by learning with us, Explore it by Joining Glowry!</p></i><br>
-   <button onclick = "window.location.href='login.html';" class="hi">Join Glowry!</button>
+    <i><p>Glowry is an initiative started by <b>Sarvesh Jayakandan and J.S. Sri Hari,</b> Its Ultimate Motive is to change the NDT world to a more productive and effective one, Which will be experienced by one and only learning, Learning is the key to success, remembering this, We started an idea to teach others using the internet and offline way with us will give you the total experience of Vibrant and Glowry!</p></i> <br>
+   <button onclick = "window.location.href='login.html';" class="hi">Learn More!</button>
     <h1>Why Choose Glowry?</h1> <br>
-    <p><i>Glowry is the child company of Vibrant NDT Services, A project to teach others NDT in online for free, We even have courses which can certify you, You may go to the website "vnsndt.com", enroll in our courses and join us if you want to teach others as a physics teacher! Come into the world of Glowry and Vibrant!</i></p>
+    <p><i>Glowry is a child company of Vibrant NDT Services Pvt Ltd, which teaches by the effective and amazing method in both offline and in online, "We promise you the best out of best" is our motive, YES Vibrant has over more than over a decade of experience manufacturing, teaching, testing, A way more lot in learning and doing things innovatively Experience the Real Vibrant and Glowry in your lives by learning with us! Vibrant and Glowry can make your NDT Skills more than the SKY! OVER THE LIMITS!</i></p>
    <button onclick="window.location.href='Signup.html';" class="hi">Experience Glowry!</button>
    <h1>Lets us Start our Journey to NDT! First of all What is NDT?</h1> <br>
    <p>Non-destructive testing (NDT) is a testing and analysis technique used by industry to evaluate the properties of a material, component, structure or system for characteristic differences or welding defects and discontinuities without causing damage to the original part. NDT is also known as non-destructive examination (NDE), non-destructive inspection (NDI) and non-destructive evaluation (NDE).</p></i>
@@ -237,6 +326,7 @@ a{
  </div>
  <div class="container">
     <h1 class="heading">A Few More Of NDT!</h1>
+    <p>Glowry is always a Few More always, Feel free to explore everything, everywhere all!</p>
     <div class="boxc">
         <div class="box">
             <img src="download.png">
@@ -251,9 +341,9 @@ a{
          </p>
          </div>
          <div class="box">
-            <img src="download (6).jpeg">
-            <h4>Full Matrix Capture</h4>
-            <p class="p">A data acquisition strategy it collects data from combination of transmitter and receiver elements in an ultrasonic phased array transducer.</p>
+            <img src="download (2).jpeg">
+            <h4>Ultrasonic Testing</h4>
+            <p class="p">Ultrasonic testing is a NDT Testing which uses sound waves to detect defects in materials.</p>
     
             </p>
          </div>
@@ -284,6 +374,17 @@ a{
          </div>
     </div>
  </div>
+ <footer>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="index.html">Glowry</a>All Rights Reserved</span>
+        <span class="policy_terms">
+          <a href="#" class="hi">Privacy policy</a>
+          <a href="#" class="hello">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
  <script src="https://kit.fontawesome.com/b6729b5f76.js" crossorigin="anonymous"></script>
  <script>
     function vnsndt(){
