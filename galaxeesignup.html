@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Create your account on Galaxee</title>
+        <link rel="shortcut icon" href="GLFAVICON.png" type="image/x-icon">
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
+               h1 {
+                font-family: montserrat;
+            }
+            body {
+                font-family: montserrat;
+                background-color: #f2f2f2;
+                background: linear-gradient(140deg, rgb(72,91,255), rgb(183, 27, 194));
+            }
+            h1 {
+                text-align: center;
+                font-size: 36px;
+                color: #ffffff;
+                margin-top: 50px;
+            }
+            form {
+                max-width: 610px;
+                margin: 10px auto;
+                padding: 40px;
+                border-radius: 50px;
+                background: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+            label {
+                font-family: montserrat;
+                font-size: 18px;
+                color: #333;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="number"] {
+                display: block;
+                width: 100%;
+                padding: 20px;
+                font-size: 16px;
+                border-radius: 2px;
+                border: 2px solid #dbdbdb;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                background-color: transparent;
+                font-family: montserrat;
+                outline: none;
+            }
+            input[type="number"]:focus{
+                border: 2px solid blue;
+            }
+            input[type="text"]:focus{
+                border: 2px solid blue;
+            }
+            input[type="password"]:focus{
+                border: 2px solid blue;
+            }
+            input[type="email"]:focus{
+                border: 2px solid blue;
+            }
+            input[type="radio"] {
+                margin-right: 10px;
+            }
+            
+            input[type="reset"],
+            input[type="submit"] {
+                display: block;
+                background: rgb(34, 56, 250);
+                color: #fff;
+                padding: 20px 35px;
+                font-size: 18px;
+                border: none;
+                border-radius: 2px;
+                margin-top: 20px;
+                width: 100%;
+                cursor: pointer;
+                transition: .5s ease;
+                font-family: montserrat;
+            }
+            input[type="reset"]:hover,
+            input[type="submit"]:hover {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                background-color: rgb(0, 24, 238);
+                transition: 0.3s ease;
+                cursor: pointer;
+            }
+           .hi a{
+                color: rgb(68, 0, 255);
+                text-decoration: none;
+                font-family: montserrat;
+                font-size: 20px;
+            }
+            .hi{
+                text-align: center;
+                margin-top: 20px;
+                transition: .3s ease;
+            }
+            .hi a:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Create your own account on Galaxee</h1>
+        <form action="Created Account.html" method="post">
+            <label for="name" id="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+            
+            <label for="age" id="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your real age" min="9" max="100" required>
+            
+            <label for="email" id="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email ID">
+            
+            <label for="password" id="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Set a password" required>
+            
+            <label for="confirmpassword" id="confirmpassword">Confirm Password:</label>
+            <input type="password" id="confirmpassword" name="confirm-password" placeholder="Confirm it" required>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Create Account">
+           <div class="hi"> <a href="login.html">Sign Up With Glowry Instead!</a></div>
+        </form>
+    </body>
+</html>
