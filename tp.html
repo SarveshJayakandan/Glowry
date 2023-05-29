@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="GLFAVICON.png" type="image/x-icon">
+    <title>Terms and Conditions</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(140deg, rgb(72,91,255), rgb(183, 27, 194));
+            min-height: 100vh;
+            font-family: montserrat;
+        }
+        .terms-box{
+            max-width: 500px;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 60px 30px;
+            border-radius: 5px;
+        }
+        .text{
+            padding: 0 20px;
+            height: 400px;
+            overflow-y: auto;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+        }
+        .text::-webkit-scrollbar{
+            width: 2px;
+            color: gray;
+        }
+        .text::-webkit-scrollbar-thumb{
+            background-color: red;
+        }
+       .text h2{
+        text-transform: uppercase;
+       }
+       .terms-box h4{
+        font-size: 15px;
+        text-align: center;
+        padding: 0 40px;
+       }
+       .terms-box h4 span{
+        color: red;
+       }
+       .btns{
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+       }
+       .btn{
+        height: 50px;
+        width: calc(50% - 6px);
+        border: 0;
+        font-size: 19px;
+        font-weight: 500;
+        color: white;
+        transition: .3s linear;
+        cursor: pointer;
+        border-radius: 2px;
+       }
+      button{
+        font-family: montserrat;
+      }
+      .accept{
+        background-color: rgb(255, 57, 57);
+      }
+      .decline{
+        background-color: rgb(51, 51, 51);
+      }
+      button{
+        font-family: montserrat;
+      }
+      .accept:hover{
+        background-color: rgb(255, 5, 5);
+        opacity: 1;
+      }
+      .decline:hover{
+        background-color: rgb(0, 0, 0);
+        opacity: 1;
+      }
+    </style>
+</head>
+<body>
+    <div class="terms-box">
+        <div class="text">
+            <h2>Terms and Conditions</h2>
+            <p>
+                As an educational company and a child company of Vibarnt NDT Services Pvtd Ltd, We planned to implement terms and conditions for our website, if any quiz is presented and if you want to attend it you msut be signed up to Glowry and Vibrant, So that your progress can be saved, and mainly you need to attend the weekly mock tests to perform well in your exams, So kindly see and acknowledge these - With Respect Team Glowry! 
+            </p>
+            <h4>I agree to the <span>Terms and Conditions</span> of Glowry</h4>
+            <div class="btns">
+                <button class="btn accept" onclick="window.location.href='index.html';">Accept</button>
+                <button class="btn decline">No, Thanks</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
