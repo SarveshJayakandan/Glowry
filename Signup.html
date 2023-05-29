@@ -32,7 +32,7 @@
             <button type="submit" onclick="signin()">Sign In</button>
           </div>
           <div class="signup">
-            <a href="login.html">Not a Member? Sign up now</a>
+            <a href="login.html">Create an account on Glowry!</a>
           </div>
         </form>
     </div>
@@ -61,7 +61,7 @@ body{
     background: white;
     width: 500px;
     padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
     border-radius: 50px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 50px;
@@ -71,8 +71,9 @@ body{
     font-size: 35px;
     font-weight: 500;
     text-align: center;
-    color: rgb(27, 52, 85);
+    color: rgb(61, 61, 61);
     font-family: montserrat;
+    text-shadow: 2px 2px #f1f1f1;
 }
 
 .container form .data{
@@ -91,35 +92,28 @@ form .data label{
 form .data input{
     width: 100%;
     height: 100%;
-    padding-left: 10px;
-    font-size: 17px;
-    border-radius: 5px;
-    color: #666666;
-    z-index: 1;
     padding: 10px;
+    font-size: 17px;
+    border-radius: 2px;
+    color: #666666;
+    background-color: transparent;
+    z-index: 1;
     outline: none;
     font-family: montserrat;
-    border-color: rgb(72,91,255);
-
-
-}
-form .data input:focus{
-    color: rgb(4, 2, 19);
-
+    border-width: 2px;
+    border-color: blue;
 }
 form .forgotpass{
     margin-top: -8px;
 }
 form .forgotpass a{
-    color: rgb(27, 52, 85);
+    color: rgb(68, 0, 255);
     text-decoration: none;
     font-family: montserrat;
 }
 form .forgotpass a:hover{
     font-family: montserrat;
-    background: rgb(238, 237, 237);
-     color: rgb(7, 13, 70);
-     padding: 5px;
+    text-decoration: underline;
 }
 form .btn{
     margin: 30px 0;
@@ -131,35 +125,32 @@ form .btn button{
     width: 100%;
     background: none;
     color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 540;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-radius: 5px;
-    background: blue;
-    border-color: rgb(113, 18, 255);
+    border-radius: 2px;
+    background: rgb(34, 56, 250);
+    outline: none;
+    border: none;
 }
 form .btn button:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: rgb(35, 44, 128);
+    background-color: rgb(0, 24, 238);
     transition: 0.2s ease;
-    
+    cursor: pointer;
 }
 form .signup{
     text-align: center;
     font-family: montserrat;
 }
 form .signup a{
-    color: rgb(27, 52, 85);
+    color: rgb(68, 0, 255);
     text-decoration: none;
     font-family: montserrat;
 }
 form .signup a:hover{
- font-family: montserrat;
- background: rgb(236, 236, 236);
- padding: 5px;
- color: rgb(7, 13, 70);
+    text-decoration: underline;
 }
 .container-2{
    width: 700px;
