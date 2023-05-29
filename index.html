@@ -9,7 +9,7 @@
     <title>Glowry NDT</title>
 </head>
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
     background: rgb(247, 247, 247);
@@ -76,7 +76,7 @@ h3{
 
 }
 nav ul li a{
-    padding: 8px;
+    padding: 8.5px;
     border-radius: 2px;
 }
 
@@ -96,9 +96,8 @@ p{
 nav ul li button{
   background-color: rgb(27, 52, 85);
   border-radius: 2px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;  
-  color: #fff;
   cursor: pointer;
+  color: white;
   font-family: montserrat;
   font-size: 18px;
   padding: 8px 15px;
@@ -109,14 +108,16 @@ nav ul li button{
   box-sizing: border-box;
 }
 nav ul li button:hover,nav ul li button:focus{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-nav ul li button:hover{
-    transform: translateY(-1px);
+  background-color: rgb(27, 52, 80);
+  transform: translateY(0);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 nav ul li button:active{
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
+}
+nav ul li button:hover{
+  transform: translateY(-1px);
 }
 .head button{
   color: rgb(27, 52, 85);
@@ -273,6 +274,11 @@ footer .bottom-details .bottom_text{
     width: 100%;
   }
 }
+@media(max-width: 768px){
+  .head button{
+    padding: 15px 200px;
+  }
+}
 </style>
 <body>
 
@@ -297,7 +303,7 @@ footer .bottom-details .bottom_text{
     <img src="Glowrybg.png">
     <h1>What is Glowry?</h1> <br>
     <i><p>Glowry is an initiative started by <b>Sarvesh Jayakandan and J.S. Sri Hari,</b> Its Ultimate Motive is to change the NDT world to a more productive and effective one, Which will be experienced by one and only learning, Learning is the key to success, remembering this, We started an idea to teach others using the internet and offline way with us will give you the total experience of Vibrant and Glowry!</p></i> <br>
-   <button onclick = "window.location.href='login.html';" class="hi">Learn More!</button>
+   <button onclick = "window.location.href='login.html';" class="hi">Join Glowry!</button>
     <h1>Why Choose Glowry?</h1> <br>
     <p><i>Glowry is a child company of Vibrant NDT Services Pvt Ltd, which teaches by the effective and amazing method in both offline and in online, "We promise you the best out of best" is our motive, YES Vibrant has over more than over a decade of experience manufacturing, teaching, testing, A way more lot in learning and doing things innovatively Experience the Real Vibrant and Glowry in your lives by learning with us! Vibrant and Glowry can make your NDT Skills more than the SKY! OVER THE LIMITS!</i></p>
    <button onclick="window.location.href='Signup.html';" class="hi">Experience Glowry!</button>
@@ -313,9 +319,9 @@ footer .bottom-details .bottom_text{
   <h3>Halogen Diode Testing:</h3>
   <p>Halogen diode testing also uses pressure to find leaks, except in this case air and a halogen-based tracer gas are mixed together and a halogen diode detection unit (or 'sniffer') is used to locate any leaks.</p>
   <h3>Mass Spectrometer Testing:</h3>
-  <p>Mass spectrometer testing uses helium or a helium and air mix inside a test chamber with a 'sniffer' to detect any changes in the air sample, which would indicate a leak. Alternatively, a vacuum can be used, in which case the mass spectrometer will sample the vacuum chamber to detect ionised helium, which will show that there has been a leak.</p>
+  <p>Mass spectrometer testing uses helium or a helium-air mix inside a test chamber with a 'sniffer' to detect any changes in the air sample, which would indicate a leak. Alternatively, a vacuum can be used, in which case the mass spectrometer will sample the vacuum chamber to detect ionised helium, which will show that there has been a leak.</p>
    <h2>Liquid Penetrant Testing (PT):</h2>
-   <p>Liquid Penetrant testing works on the basic principle of capilary action Liquid penetrant testing involves the application of a fluid with low viscosity to the material to be tested. This fluid seeps into any defects such as cracks or porosity before a developer is applied which allows the penetrant liquid to seep upwards and create a visible indication of the flaw. The tests can be conducted by using solvent removable penetrants, water washable penetrants or post-emulsifiable penetrants.</p>
+   <p>Liquid Penetrant testing works on the basic principle of capillary action, Liquid penetrant testing involves the application of a fluid with low viscosity to the material to be tested. This fluid seeps into any defects such as cracks or porosity before a developer is applied which allows the penetrant liquid to seep upwards and create a visible indication of the flaw. The tests can be conducted by using solvent removable penetrants, water washable penetrants or post-emulsifiable penetrants.</p>
    <h2>Eddy Current Separater:</h2>
    <p>An eddy current separator (ECS) is a machine that uses a powerful magnetic field to separate non-ferrous metals from an input waste or ore stream. The device makes use of eddy currents to effect the separation. Non-ferrous metals typically separated by an ECS include aluminum, copper and die-cast metals. In waste processing, ECS is used after all ferrous metals have been removed previously by some arrangement of magnets. In mining, ECS is sometimes also used to separate metals from mined ore.</p>
    <h2>Ultra Sonic Testing (UT):</h2>
@@ -379,8 +385,8 @@ footer .bottom-details .bottom_text{
       <div class="bottom_text">
         <span class="copyright_text">Copyright © 2023 <a href="index.html">Glowry</a>All Rights Reserved</span>
         <span class="policy_terms">
-          <a href="#" class="hi">Privacy policy</a>
-          <a href="#" class="hello">Terms & condition</a>
+          <a href="pp.html" class="hi">Privacy policy</a>
+          <a href="tp.html" class="hello">Terms & condition</a>
         </span>
       </div>
     </div>
