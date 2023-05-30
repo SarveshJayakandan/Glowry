@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome Back to Galaxee</title>
+        <link rel="shortcut icon" href="GalaxeeLogo.png" type="image/x-icon">
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
+               h1 {
+                font-family: montserrat;
+            }
+            body {
+                font-family: montserrat;
+                background-color: #f2f2f2;
+                background: linear-gradient(140deg, rgb(72,91,255), rgb(183, 27, 194));
+            }
+            h1 {
+                text-align: center;
+                font-size: 36px;
+                color: #ffffff;
+                margin-top: 20px;
+            }
+            form {
+                max-width: 610px;
+                margin: 2px auto;
+                padding: 40px;
+                border-radius: 50px;
+                background: rgb(255, 255, 255);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+            label {
+                font-family: montserrat;
+                font-size: 18px;
+                color: #333;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="number"] {
+                display: block;
+                width: 100%;
+                padding: 20px;
+                font-size: 16px;
+                border-radius: 2px;
+                border: 2px solid #dbdbdb;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                background-color: transparent;
+                font-family: montserrat;
+                outline: none;
+            }
+            input[type="number"]:focus{
+                border: 2px solid blue;
+            }
+            input[type="text"]:focus{
+                border: 2px solid blue;
+            }
+            input[type="password"]:focus{
+                border: 2px solid blue;
+            }
+            input[type="email"]:focus{
+                border: 2px solid blue;
+            }
+            input[type="radio"] {
+                margin-right: 10px;
+            }
+            
+            input[type="reset"],
+            input[type="submit"] {
+                display: block;
+                background: rgb(34, 56, 250);
+                color: #fff;
+                padding: 20px 35px;
+                font-size: 18px;
+                border: none;
+                border-radius: 2px;
+                margin-top: 20px;
+                width: 100%;
+                cursor: pointer;
+                transition: .5s ease;
+                font-family: montserrat;
+            }
+            input[type="reset"]:hover,
+            input[type="submit"]:hover {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                background-color: rgb(0, 24, 238);
+                transition: 0.3s ease;
+                cursor: pointer;
+            }
+            button{
+                text-align: center;
+                padding: 12px 250px;
+                margin-top: 7px;
+                background: rgb(34, 56, 250);
+                color: white;
+                font-family: montserrat;
+                outline: none;
+                border: none;
+                font-size: 15px;
+                background-image: url(GLFAVICON.png);
+                background-repeat: no-repeat;
+                background-size: 63px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(34, 56, 250) 0px 0px 0px 3px;
+            }
+            button:hover{
+                background-color: rgb(0, 24, 238);
+                transition: 0.3s ease;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 24, 238) 0px 0px 0px 3px;
+            }
+            p{
+                font-weight: 500;
+            }
+            img{
+                width: 30px;
+            }
+            .btn{
+               text-align: center;
+            }
+            .or{
+                text-align: center;
+            }
+
+
+         </style>
+    </head>
+    <body>
+        <h1>Welcome Back to Galaxee</h1>
+        <form action="createdaccount.php" method="post">
+            <label for="email" id="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email ID">
+            <label for="password" id="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <input type="submit" value="Explore Galaxee? Create an Account" onclick="window.location.href='galaxeesignup.html';">
+            <input type="submit" value="Welcome Back">
+            <br>
+            <hr>
+           <p class="or">OR</p>
+           <div class="btn"><button type="button" onclick="window.location.href='Signup.html'";>Sign in with Glowry</button></div>
+        </form>
+    </body>
+</html>
