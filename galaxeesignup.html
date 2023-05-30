@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Create your account on Galaxee</title>
-        <link rel="shortcut icon" href="GLFAVICON.png" type="image/x-icon">
+        <link rel="shortcut icon" href="GalaxeeLogo.png" type="image/x-icon">
         <style>
              @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
                h1 {
@@ -25,7 +25,7 @@
                 margin: 10px auto;
                 padding: 40px;
                 border-radius: 50px;
-                background: white;
+                background: rgb(255, 255, 255);
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             }
             label {
@@ -89,21 +89,42 @@
                 transition: 0.3s ease;
                 cursor: pointer;
             }
-           .hi a{
-                color: rgb(68, 0, 255);
-                text-decoration: none;
-                font-family: montserrat;
-                font-size: 20px;
-            }
-            .hi{
+            button{
                 text-align: center;
-                margin-top: 20px;
-                transition: .3s ease;
+                padding: 12px 250px;
+                margin-top: 7px;
+                background: rgb(34, 56, 250);
+                color: white;
+                font-family: montserrat;
+                outline: none;
+                border: none;
+                font-size: 15px;
+                background-image: url(GLFAVICON.png);
+                background-repeat: no-repeat;
+                background-size: 63px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(34, 56, 250) 0px 0px 0px 3px;
             }
-            .hi a:hover{
-                text-decoration: underline;
+            button:hover{
+                background-color: rgb(0, 24, 238);
+                transition: 0.3s ease;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 24, 238) 0px 0px 0px 3px;
             }
-        </style>
+            p{
+                font-weight: 500;
+            }
+            img{
+                width: 30px;
+            }
+            .btn{
+               text-align: center;
+            }
+            .or{
+                text-align: center;
+            }
+
+
+         </style>
     </head>
     <body>
         <h1>Create your own account on Galaxee</h1>
@@ -124,7 +145,10 @@
             <input type="password" id="confirmpassword" name="confirm-password" placeholder="Confirm it" required>
             <input type="reset" value="Reset">
             <input type="submit" value="Create Account">
-           <div class="hi"> <a href="login.html">Sign Up With Glowry Instead!</a></div>
+            <br>
+            <hr>
+           <p class="or">OR</p>
+           <div class="btn"><button type="button" onclick="window.location.href='login.html'";>Sign up with Glowry</button></div>
         </form>
     </body>
 </html>
