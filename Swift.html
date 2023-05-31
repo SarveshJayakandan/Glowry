@@ -6,122 +6,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="GalaxeeLogo.png" type="image/x-icon">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background: linear-gradient(140deg, rgb(72,91,255), rgb(183, 27, 194));
-            font-family: montserrat;
+    @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    height: 80px;
+    background: rgb(255, 255, 255);
+    max-width: 1349px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+nav ul li a{
+    position: relative;
+    color: rgb(99, 99, 99);
+    font-size: 19px;
+}
+nav img{
+    width: 158px;
+    position: absolute;
+    top: 11px;
+    left: 7%;
+    border-radius: 5px;
+    
+}
+h1{
+     font-family: montserrat;
+     font: 2em;
+     font-weight: bold;
+     margin-left: 5%;
+     margin-top: 3%;
+  
+}
+h2{
+    margin-left: 5%;
+     margin-top: 2%;
+     margin-bottom: 1%;
+     color: rgb(46, 46, 46);
+
+}
+h3{
+    margin-left: 5%;
+     margin-top: 2%;
+     color: rgb(46, 46, 46);
+     margin-bottom: 1%;
+     font-size: 1.5em;
+
+}
+nav ul li a{
+    padding: 8.5px;
+    border-radius: 2px;
+}
+
+nav ul li a:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            bottom: -5px;
+            left: 0;
+            opacity: 0;
+            transform: scaleX(0);
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
+
+      nav ul li a:hover:before {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 23px;
+    margin-bottom: 2%;
+    font-family: montserrat;
+}
+nav ul li button{
+  background-color: rgb(27, 52, 85);
+  border-radius: 2px;
+  cursor: pointer;
+  color: white;
+  font-family: montserrat;
+  font-size: 18px;
+  padding: 8px 15px;
+  position: relative;
+  transition: all 250ms;
+  outline: none;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+nav ul li button:hover,nav ul li button:focus{
+  background-color: rgb(27, 52, 80);
+  transform: translateY(0);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+nav ul li button:active{
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+nav ul li button:hover{
+  transform: translateY(-1px);
+}
         .container{
+            width: 100%;
             height: 100vh;
+            background: rgb(255, 255, 255);
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
         }
         .calculator{
-            background: white;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 2px;
+            background: rgb(27, 52, 85);
+            margin-bottom: 80px;
+            border-radius: 10px;
+        }
+        .calculator form input{
+            border: 0;
+            outline: 0;
+            background: transparent;
+            width: 60px;
+            height: 60px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            display: grid;
-            grid-template-columns: repeat(4,68px);
-        }
-        input{
-            grid-column: span 4;
-            height: 70px;
-            width: 260px;
-            background: rgb(183, 27, 194);
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            border: none;
-            color: rgb(255, 255, 255);
-            font-size: 50px;
-            text-align: end;
-            margin: auto;
-            margin-top: 40px;
-            margin-bottom: 30px;
-            padding: 20px;
-            outline: none;
-            border-radius: 2px;
-            margin-right: 30px;
-        }
-        input::placeholder{
+            cursor: pointer;
             color: white;
+            font-size: 20px;
+            margin: 10px;
+            border-radius: 50px;
+
         }
-        button{
-            height: 50px;
-            width: 50px;
-            background: rgb(9, 34, 255);
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-            border: none;
-            margin: 8px;
-            font-size: 16px;
-            color: white;
-            border-radius: 2px;
+        form .display{
+            margin: 20px 0;
+            display: flex;
+            justify-content: flex-end;
         }
-        button:hover{
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                background-color: rgb(15, 39, 250);
-                transition: 0.3s ease;
-                cursor: pointer;
+        form .display input{
+            flex: 1;
+            box-shadow: none;
+            text-align: right;
+            font-size: 45px;
+            margin-right: 10px;
         }
-        .equal{
-            width: 118px;
-            background: rgb(0, 61, 230);
+        .calculator form input:hover{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #7F6FEA 0px 0px 0px 3px;
+            transition: .3s ease;
         }
-        h1{
-            background: white;
-            color: rgb(56, 56, 56);
+       form input.equal{
+            width: 145px;
+            color: #7F6FEA;
+        }
+        form input.operator{
+            color: #7F6FEA;
         }
     </style>
-    <title>Swift by Glowry</title>
+    <title>Swift</title>
 </head>
 <body>
+    
+    <nav>
+
+        <img src="Swift.png">
+                <ul>
+                  
+                    <li><a href="updates.html">Updates</a></li>
+                    <li><a href="sorry.html">Voice Input</a></li>
+                    <li><a href="sorry.html">Image Input</a></li>
+                    <li><a href="products.html">Explore More</a></li>
+                </ul>
+            </nav>
     <div class="container">
-        <div class="calculator">
-            <h1>Swift</h1>
-            <input type="text" placeholder="0" id="output">
-            <button onclick="Clear()">C</button>
-            <button onclick="del()">Del</button>
-            <button onclick="display('%')">%</button>
-            <button onclick="display('/')">/</button>
-            <button onclick="display('7')">7</button>
-            <button onclick="display('8')">8</button>
-            <button onclick="display('9')">9</button>
-            <button onclick="display('*')">*</button>
-            <button onclick="display('4')">4</button>
-            <button onclick="display('5')">5</button>
-            <button onclick="display('6')">6</button>
-            <button onclick="display('-')">-</button>
-            <button onclick="display('1')">1</button>
-            <button onclick="display('2')">2</button>
-            <button onclick="display('3')">3</button>
-            <button onclick="display('+')">+</button>
-            <button onclick="display('.')">.</button>
-            <button onclick="display('0')">0</button>
-            <button onclick="calculate()" class="equal">=</button>
+      <div class="calculator">
+        <form>
+        <div class="display">
+            <input type="text" name="display">
         </div>
+        <div>
+            <input type="button" value="AC" onclick="display.value = ''" class="operator">
+            <input type="button" value="Del" onclick="display.value = display.value.toString().slice(0, -1)" class="operator">
+            <input type="button" value="." onclick="display.value += '.'" class="operator">
+            <input type="button" value="/" onclick="display.value += '/'" class="operator">
+        </div>
+        <div>
+            <input type="button" value="7" onclick="display.value += '7'">
+            <input type="button" value="8" onclick="display.value += '8'">
+            <input type="button" value="9" onclick="display.value += '9'">
+            <input type="button" value="*" onclick="display.value += '*'" class="operator">
+        </div>
+        <div>
+            <input type="button" value="4" onclick="display.value += '4'">
+            <input type="button" value="5" onclick="display.value += '5'">
+            <input type="button" value="6" onclick="display.value += '6'">
+            <input type="button" value="-" onclick="display.value += '-'" class="operator">
+        </div>
+        <div>
+            <input type="button" value="1" onclick="display.value += '1'">
+            <input type="button" value="2" onclick="display.value += '2'">
+            <input type="button" value="3" onclick="display.value += '3'">
+            <input type="button" value="+" onclick="display.value += '+'" class="operator">
+        </div>
+        <div>
+            <input type="button" value="00" onclick="display.value += '00'">
+            <input type="button" value="0" onclick="display.value += '0'">
+            <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal">
+        </div>
+    </form>
+      </div>
     </div>
     <script>
-        let outputscreen = document.getElementById('output');
-
-        function display(num){
-            outputscreen.value += num;
-        }
-        function calculate(){
-            try{
-                outputscreen.value = eval(outputscreen.value);
-            }
-            catch(err){
-                alert("Swift encountered an error of your input, please try again with a proper input.")
-            }
-        }
-           function Clear() {
-            outputscreen.value = "";
-           }
-        function del(){
-            outputscreen.value = outputscreen.value.slice(0, -1);
+        function Invalid(){
+           
         }
     </script>
 </body>
