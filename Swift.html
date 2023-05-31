@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="GalaxeeLogo.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(140deg, rgb(72,91,255), rgb(183, 27, 194));
+            font-family: montserrat;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator{
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: grid;
+            grid-template-columns: repeat(4,68px);
+        }
+        input{
+            grid-column: span 4;
+            height: 70px;
+            width: 260px;
+            background: rgb(183, 27, 194);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border: none;
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            text-align: end;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            padding: 20px;
+            outline: none;
+            border-radius: 2px;
+            margin-right: 30px;
+        }
+        input::placeholder{
+            color: white;
+        }
+        button{
+            height: 50px;
+            width: 50px;
+            background: rgb(9, 34, 255);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            border: none;
+            margin: 8px;
+            font-size: 16px;
+            color: white;
+            border-radius: 2px;
+        }
+        button:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                background-color: rgb(15, 39, 250);
+                transition: 0.3s ease;
+                cursor: pointer;
+        }
+        .equal{
+            width: 118px;
+            background: rgb(0, 61, 230);
+        }
+        h1{
+            background: white;
+            color: rgb(56, 56, 56);
+        }
+    </style>
+    <title>Swift by Glowry</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Swift</h1>
+            <input type="text" placeholder="0" id="output">
+            <button onclick="Clear()">C</button>
+            <button onclick="del()">Del</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="calculate()" class="equal">=</button>
+        </div>
+    </div>
+    <script>
+        let outputscreen = document.getElementById('output');
+
+        function display(num){
+            outputscreen.value += num;
+        }
+        function calculate(){
+            try{
+                outputscreen.value = eval(outputscreen.value);
+            }
+            catch(err){
+                alert("Swift encountered an error of your input, please try again with a proper input.")
+            }
+        }
+           function Clear() {
+            outputscreen.value = "";
+           }
+        function del(){
+            outputscreen.value = outputscreen.value.slice(0, -1);
+        }
+    </script>
+</body>
+</html>
