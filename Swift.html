@@ -69,24 +69,12 @@ nav ul li a{
     padding: 8.5px;
     border-radius: 2px;
 }
-
-nav ul li a:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 3px;
-            background-color: #fff;
-            bottom: -5px;
-            left: 0;
-            opacity: 0;
-            transform: scaleX(0);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
-
-      nav ul li a:hover:before {
-            opacity: 1;
-            transform: scaleX(1);
-        }
+nav ul li a:hover{
+    background: rgb(27, 52, 85);
+    border-radius: 2px;
+    transition: .4s ease;
+    color: rgb(255, 255, 255);
+}
 p{
     margin-left: 5%;
     margin-right: 5%;
