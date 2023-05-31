@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="GLFAVICON.png">
-    <title>Glowry NDT</title>
+    <title>Glowry</title>
 </head>
       <style>
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
@@ -128,12 +128,13 @@ nav ul li button:hover{
   font-weight: bold;
   cursor: pointer;
   font-size: large;
-  border-radius: 5px;
   margin-right: 5%;
   margin-left: 5%;
+  margin-top: 5%;
   font-family: montserrat;
   margin-bottom: 50px;
   transition: .3s ease;
+  border-radius: 2px;
 }
 .head button:hover{
     background-color: rgb(27, 52, 85);
@@ -170,6 +171,8 @@ a{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transform: scale(1.03);
     transition: .1s;
+    animation: 3s ease-in 1s infinite;
+
 }
 .container .boxc .box img{
    height: 80px;
@@ -192,7 +195,7 @@ footer{
   background: #000000;
   width: 100%;
   left: 0;
-  bottom: -3800px;
+  bottom: -5000px;
 }
 footer .bottom-details{
   width: 100%;
@@ -216,11 +219,9 @@ footer .bottom-details .bottom_text{
 }
 .bottom-details .bottom_text .hi:hover{
   opacity: 1;
-  text-decoration: underline;
 }
 .bottom-details .bottom_text .hello:hover{
   opacity: 1;
-  text-decoration: underline;
 }
 .bottom-details .bottom_text a{
   margin-right: 10px;
@@ -280,6 +281,118 @@ footer .bottom-details .bottom_text{
     padding: 15px 200px;
   }
 }
+div{
+  display: block;
+}
+hr{
+  color: white;
+}
+.head .container-what{
+ background: rgb(27, 52, 85);
+ padding: 30px;
+ border-radius: 2px;
+ color: white;
+ margin-top: -5px;
+}
+.head .container-what h3{
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 23px;
+  line-height: 1.2;
+}
+.head .container-what p{
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+.linklearnmore{
+  text-align: center;
+}
+.linklearnmore a{
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  background: rgb(221, 221, 221);
+  border-radius: 50px;
+  font-weight: 400;
+}
+.linklearnmore a{
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 36px;
+
+}
+.linklearnmore a:hover{
+  color: rgb(28, 50, 75);
+  background-color: rgb(255, 255, 255);
+  transition: .4s ease;
+  background-position: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.text{
+  text-align: center;
+}
+.text .para{
+  margin-top: 20px;
+}
+.blast{
+background: rgb(255, 255, 255);
+width: 600px;
+ border-radius: 2px;
+ color: rgb(24, 24, 24);
+ margin-top: 20px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ margin-left: 36px;
+ height: 200px;
+ padding: 10px;
+ border-radius: 5px;
+ display: inline-block;
+ vertical-align: top;
+ transition: .2s ease;
+}
+.blast:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px,
+  rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(27, 52, 85) 0px 0px 0px 3px;
+  user-select: none;
+}
+.blast h3{
+  text-shadow: 1px 1px 2px rgb(241, 241, 241);
+  margin-top: 10px;
+}
+.blast p{
+  margin-bottom: 20px;
+  color: rgb(73, 73, 73);
+}
+.container .boxc .box .btns{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 50px;
+    background: rgb(34, 56, 250);
+    color: white;
+    font-size: 17px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .container .boxc .box .btns:hover{
+    background-color: rgb(0, 24, 238);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(25, 0, 255) 0px 0px 0px 2.3px;
+  }
+  .end-text{
+    margin-left: 45px;
+    color: rgb(27, 52, 85);
+    margin-top: 50px;
+  }
+  .ceo{
+    text-align: right;
+    margin-right: 145px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgb(212, 212, 212);
+}
 </style>
 <body>
 
@@ -302,11 +415,32 @@ footer .bottom-details .bottom_text{
 
  <div class="head">
     <img src="Glowrybg.png">
-   <h1>What is Glowry?</h1><br>
-    <i><p>Glowry is an initiative started by <b>Sarvesh Jayakandan and J.S. Sri Hari,</b> Its Ultimate Motive is to change the NDT world to a more productive and effective one, Which will be experienced by one and only learning, Learning is the key to success, remembering this, We started an idea to teach others using the internet and offline way with us will give you the total experience of Vibrant and Glowry!</p></i> <br>
-   <button onclick = "window.location.href='login.html';" class="hi">Join Glowry!</button>
-    <h1>Why Choose Glowry?</h1> <br>
-    <p><i>Glowry is a child company of Vibrant NDT Services Pvt Ltd, which teaches by the effective and amazing method in both offline and in online, "We promise you the best out of best" is our motive, YES Vibrant has over more than over a decade of experience manufacturing, teaching, testing, A way more lot in learning and doing things innovatively Experience the Real Vibrant and Glowry in your lives by learning with us! Vibrant and Glowry can make your NDT Skills more than the SKY! OVER THE LIMITS!</i></p>
+ <div class="container-what">
+  <h3>What is Glowry?</h3>
+  <p>
+    Glowry is an initiative started by Sarvesh Jayakandan and J.S. Sri Hari, Its Ultimate Motive is to approach the NDT world as a more productive and effective one, Which will be experienced by learning and appplying it on jobs and improving the skills, Learning and practicing is the key to success, remembering this, We started an idea to teach others using the internet using Glowry and the interactive way giving you the Certification and the Skills you need! Welcome to Glowry!</p>
+ <div class="linklearnmore">
+  <a href="about.html" class="leanrmore">Learn More   <i class="fa-solid fa-chevron-right"></i></a>
+ </div>
+</div>
+<hr>
+<div class="blast"> 
+  <h3>Why It was Innovated?</h3>
+  <p>
+   The Main Motive was not of bringing education first, but when the reality hit, we understood how important and how it can change human's life, made us to innovate an educational website for the NDT Career!</p>
+ <div class="linklearnmore">
+ </div>
+</div>
+<div class="blast"> 
+  <h3>It was Innovated by Whom?</h3>
+  <p>
+  The Starting Stage of this idea, I had J.S.SriHari who gave his efforts and made this much, I Really thank him for this help, The ideas evolved into this whole website and the Platform! It was only vision - NDT!</p>
+ <div class="linklearnmore">
+ </div>
+ 
+</div>
+
+
    <button onclick="window.location.href='Signup.html';" class="hi">Experience Glowry!</button>
    <h1>Lets us Start our Journey to NDT! First of all What is NDT?</h1> <br>
    <p>Non-destructive testing (NDT) is a testing and analysis technique used by industry to evaluate the properties of a material, component, structure or system for characteristic differences or welding defects and discontinuities without causing damage to the original part. NDT is also known as non-destructive examination (NDE), non-destructive inspection (NDI) and non-destructive evaluation (NDE).</p></i>
@@ -380,6 +514,64 @@ footer .bottom-details .bottom_text{
          </div>
     </div>
  </div>
+ <div class="text">
+  <h1>Our New Platform: Meet Galaxee</h1>
+ <div class="para"><p>The platform where all your needs are in a single place! Now Explore the Galaxee!</p></div>
+ </div>
+ <div class="container">
+  <h1 class="heading">Explore The Galaxee!</h1>
+  <div class="boxc">
+      <div class="box">
+          <img src="SwiftLogo.png">
+          <h4>Introducing Swift</h4>
+          <p class="p">Your most efficient collaborator for calculating numbers with voices and images and manually, Explore Swift now on Galaxee</p>
+          </p>
+         <a href="" class="btns">Explore Swift</a>
+       </div>
+       <div class="box">
+          <img src="DynamicLogo.png">
+          <h4>Introducing Dynamic</h4>
+          <p class="p">Your most easy and convinient helper for checking the Dynamic weathers of the world, or may be in other plannets maybe, Explore Dynamic!
+          </p>
+       </p>
+       <a href="" class="btns">Explore Dynamic</a>
+       </div>
+       <div class="box">
+          <img src="Tempo.png">
+          <h4>Introducing Tempo</h4>
+          <p class="p">Your most enjoyable teacher, for seeing the unstoppable time, Stay in touch with it, A whole lot Explore it now on Galaxee</p>
+          </p>
+          <a href="" class="btns">Explore Tempo</a>
+       </div>
+       <div class="box">
+          <img src="TurboLogo.png">
+          <h4>Introducing Turbo</h4>
+          <p class="p">Your, Super-Charged, Calendar for your work, school, and even plannings for holidays, etc, Explore it now on Galaxee</p>
+
+          </p>
+  
+          <a href="" class="btns">Explore Turbo</a>
+       </div>
+       <div class="box">
+          <img src="EliteLogo.png">
+          <h4>Introducing Elite</h4>
+          <p class="p">Your best friend for speaking various of your dreamed elite languages, learn, explore the Elite now on Galaxee</p>
+    
+          </p>
+          <a href="" class="btns">Explore Elite</a>
+       </div>
+       <div class="box">
+          <img src="ExciteLogo.png">
+          <h4>Introducing Excite</h4>
+          <p class="p">Your bro, who will make you feel excited all the time, enjoying it always with him, explore it now on Galaxee</p>
+          </p>
+          <a href="" class="btns">Explore Excite</a>
+       </div>
+  </div>
+</div>
+<div class="end-text"><h1>The Glowry will make everyone's Heart Glow! All the Best! Everyone!
+</h1> <p class="ceo">- SarveshJayakandan CEO of Glowry</p></div>
+ 
  <footer>
     <div class="bottom-details">
       <div class="bottom_text">
