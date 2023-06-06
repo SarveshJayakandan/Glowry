@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="initial-scale">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="keywords" content="ndt">
+    <meta name="keywords" content="what is ndt">
+    <meta name="keywords" content="calculator">
+    <meta name="keywords" content="glowry">
+    <meta name="keywords" content="ndt methods">
+    <meta name="keywords" content="types of ndt">
     <link rel="icon" href="GLFAVICON.png">
     <title>Glowry</title>
 </head>
@@ -16,6 +21,55 @@ body{
     margin: 0;
     padding: 0;
 }
+.hamburgertastytasty:hover{
+            cursor: pointer;
+        }
+        @media(max-width: 768px){
+            nav ul{
+                position: fixed;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: rgb(27, 52, 85);
+                top: 80px;
+                left: -100%;
+            }
+            nav ul li{
+                display: block;
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                top: -100px;
+            }
+            nav ul#links li a{
+                color: rgb(255, 255, 255);
+            }
+            nav ul#links li a:hover{
+              background: white;
+              color: rgb(27, 52, 80);
+            }
+            nav ul#links li button{
+              box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(27, 52, 85) 0px 0px 0px 3px;
+              background: white;
+              color: rgb(27, 52, 80);
+            }
+            .hamburgertastytasty{
+                float: right;
+                padding-right: 20px;
+                padding-top: 28px;
+            }
+            .hamburgertastytasty .line{
+                width: 29px;
+                height: 5px;
+                background-color: rgb(27, 52, 85);
+                margin-bottom: 5px;
+                display: block;
+                border-radius: 50px;
+            }
+            .head button{
+              width: 700px;
+            }
+        }
 *{
     margin: 0;
     padding: 0;
@@ -79,7 +133,6 @@ nav ul li a{
     padding: 8.5px;
     border-radius: 2px;
 }
-
 nav ul li a:hover{
     background: rgb(27, 52, 85);
     border-radius: 2px;
@@ -153,7 +206,7 @@ a{
 }
 .container .heading{
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 .container .boxc{
     display: grid;
@@ -280,6 +333,19 @@ footer .bottom-details .bottom_text{
   .head button{
     padding: 15px 200px;
   }
+  footer{
+     bottom: -7000px;
+  }
+}
+@media(max-width: 500px){
+  footer{
+     bottom: -200px;
+  }
+}
+@media(max-width: 700px){
+  footer{
+     bottom: -100px;
+  }
 }
 div{
   display: block;
@@ -397,10 +463,9 @@ width: 600px;
 <body>
 
     <nav>
-
       <img src="GLLOGO.png">
        
-              <ul>
+              <ul id="links">
                 
                   <li><a href="about.html">About</a></li>
                   <li><a href="home.html">Feel Vast</a></li>
@@ -410,8 +475,12 @@ width: 600px;
                   <li><button onclick="window.location.href = 'Signup.html'">Sign In</button></li>
 
               </ul>
+              <div class="hamburgertastytasty" onclick="shownavbarplease()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
           </nav>
-</nav>
 
  <div class="head">
     <img src="Glowrybg.png">
@@ -467,7 +536,7 @@ width: 600px;
  </div>
  <div class="container">
     <h1 class="heading">A Few More Of NDT!</h1>
-    <p>Glowry is always a Few More always, Feel free to explore everything, everywhere all!</p>
+    <p class="paragraphvisbleinvisible">Glowry is always a Few More always, Feel free to explore everything, everywhere all!</p>
     <div class="boxc">
         <div class="box">
             <img src="download.png">
@@ -531,7 +600,7 @@ width: 600px;
        <div class="box">
           <img src="DynamicLogo.png">
           <h4>Introducing Dynamic</h4>
-          <p class="p">Your most easy and convinient helper for checking the Dynamic weathers of the world, or may be in other plannets maybe, Explore Dynamic!
+          <p class="p">Your most easy and convinient helper for checking the Dynamic weathers of the world, Explore Dynamic!
           </p>
        </p>
        <a href="" class="btns">Explore Dynamic</a>
@@ -585,10 +654,15 @@ width: 600px;
   </footer>
  <script src="https://kit.fontawesome.com/b6729b5f76.js" crossorigin="anonymous"></script>
  <script>
-    function vnsndt(){
-     const url = "https://www.vnsndt.com/"
-     window.open(url);
-    }
+    function shownavbarplease(){
+        const links = document.getElementById('links');
+        if(links.style.left === '-100%'){
+            links.style.left = 0;
+            links.style.transition = '.5s ease'
+        } else{
+            links.style.left = '-100%';
+        }
+      }
  </script>
 </body>
 </html>
