@@ -14,105 +14,10 @@
     list-style: none;
     font-family: 'Montserrat', sans-serif;
 }
-nav{
-    height: 80px;
-    background: rgb(255, 255, 255);
-    max-width: 1349px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-nav ul{
-    float: right;
-    margin-right: 50px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 8px;
-}
-nav ul li a{
-    position: relative;
-    color: rgb(99, 99, 99);
-    font-size: 19px;
-}
-nav img{
-    width: 158px;
-    position: absolute;
-    top: 11px;
-    left: 7%;
-    border-radius: 5px;
-    
-}
-h1{
-     font-family: montserrat;
-     font: 2em;
-     font-weight: bold;
-     margin-left: 5%;
-     margin-top: 3%;
-  
-}
-h2{
-    margin-left: 5%;
-     margin-top: 2%;
-     margin-bottom: 1%;
-     color: rgb(46, 46, 46);
-
-}
-h3{
-    margin-left: 5%;
-     margin-top: 2%;
-     color: rgb(46, 46, 46);
-     margin-bottom: 1%;
-     font-size: 1.5em;
-
-}
-nav ul li a{
-    padding: 8.5px;
-    border-radius: 2px;
-}
-nav ul li a:hover{
-    background: rgb(27, 52, 85);
-    border-radius: 2px;
-    transition: .4s ease;
-    color: rgb(255, 255, 255);
-}
-p{
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 23px;
-    margin-bottom: 2%;
-    font-family: montserrat;
-}
-nav ul li button{
-  background-color: rgb(27, 52, 85);
-  border-radius: 2px;
-  cursor: pointer;
-  color: white;
-  font-family: montserrat;
-  font-size: 18px;
-  padding: 8px 15px;
-  position: relative;
-  transition: all 250ms;
-  outline: none;
-  border: 1px solid transparent;
-  box-sizing: border-box;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-nav ul li button:hover,nav ul li button:focus{
-  background-color: rgb(27, 52, 80);
-  transform: translateY(0);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-nav ul li button:active{
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
-}
-nav ul li button:hover{
-  transform: translateY(-1px);
-}
         .container{
             width: 100%;
             height: 100vh;
-            background: rgb(255, 255, 255);
+            background: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -121,8 +26,22 @@ nav ul li button:hover{
             padding: 20px;
             border-radius: 2px;
             background: rgb(27, 52, 85);
-            margin-bottom: 80px;
+            margin-bottom: 20px;
             border-radius: 10px;
+            margin-left: 100px;
+        }
+        @media(max-width: 955px){
+            .menu{
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;       
+             }
+            .hamburgertastytasty{
+                display: block;
+                margin-top: 30px;
+            }
+            .hamburgertastytasty .line{
+                display: block;
+            }
         }
         .calculator form input{
             border: 0;
@@ -161,71 +80,80 @@ nav ul li button:hover{
         form input.operator{
             color: #7F6FEA;
         }
-        span{
-            color: white;
-            user-select: none;
-        }
         .hamburgertastytasty:hover{
             cursor: pointer;
         }
-        @media(max-width: 768px){
-            nav ul{
-                position: fixed;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                background: #7F6FEA;
-                top: 80px;
-                left: -100%;
-            }
-            nav ul li{
-                display: block;
-                width: 100%;
-                margin: 0;
-                text-align: center;
-                top: -100px;
-            }
-            nav ul li a{
-                color: white;
-            }
-            nav ul li a:hover{
-                background: #6851ff;
-            }
-            .hamburgertastytasty{
-                float: right;
-                padding-right: 20px;
-                padding-top: 32px;
-            }
-            .hamburgertastytasty .line{
+        .menu{
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 280px;
+  background: rgb(27, 52, 85);
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  display: block;
+}
+.menu header img{
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  line-height: 900px;
+  user-select: none;
+  background: rgb(27, 52, 85);
+  width: 280px;
+}
+.menu ul a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 78px;
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  padding-left: 50px;
+  box-sizing: border-box;
+  border-radius: 1px;
+}
+ul li:hover a{
+  background: rgb(255, 255, 255);
+  transition: .2s ease;
+  color: #7F6FEA;
+}
+.menu ul a i{
+  margin-right: 17px;
+}
+.hamburgertastytasty {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  width: 30px;
+  height: 30px;
+}
+.hamburgertastytasty .line{
                 width: 29px;
                 height: 5px;
-                background-color: #7F6FEA;
+                background-color: rgb(255, 255, 255);
                 margin-bottom: 5px;
-                display: block;
                 border-radius: 50px;
-                
             }
-        }
-    </style>
+ </style>
     <title>Swift</title>
 </head>
 <body>
     
-    <nav>
-
-        <img src="Swift.png">
-                <ul id="links">
-                    <li><a href="updates.html">Updates</a></li>
-                    <li><a href="#">Voice Input</a></li>
-                    <li><a href="#">Image Input</a></li>
-                    <li><a href="products.html">Explore More</a></li>
-                </ul>
-                <div class="hamburgertastytasty" onclick="shownavbarplease()">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-            </nav>
+    <div class="menu" id="sidebar">
+        <header><img src="SwiftStandardmodeLogo.png" alt="Swift" id="imghaha" onclick="clickimage()"></header>
+        <ul id="links">
+            <li><a href="updates.html"><i class="fa-solid fa-arrow-up"></i></i>Swift Updates</a></li>
+            <li><a href="#"><i class="fa-solid fa-microphone"></i>Voice Input</a></li>
+            <li><a href="#"><i class="fa-solid fa-camera-retro"></i>Image Input</a></li>
+            <li><a href="products.html"><i class="fa-solid fa-plus"></i>Explore More</a></li>
+        </ul>
+        <div class="hamburgertastytasty" onclick="shownavbarplease()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+       </div>
     <div class="container">
       <div class="calculator">
         <form>
@@ -265,16 +193,16 @@ nav ul li button:hover{
       </div>
     </div>
     <script>
-      function shownavbarplease(){
-        const links = document.getElementById('links');
-        if(links.style.left === '-100%'){
-            links.style.left = 0;
+   function shownavbarplease(){
+        const links = document.getElementById('sidebar');
+        if(links.style.transform === "translateX(-100%)"){
+            links.style.transform = "translateX(0)"
             links.style.transition = '.5s ease'
         } else{
-            links.style.left = '-100%';
+            links.style.transform = "translateX(-100%)"
         }
       }
-
     </script>
+     <script src="https://kit.fontawesome.com/b6729b5f76.js" crossorigin="anonymous"></script>
 </body>
 </html>
