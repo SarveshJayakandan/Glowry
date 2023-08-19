@@ -17,7 +17,7 @@
         .container{
             width: 100%;
             height: 100vh;
-            background: #7F6FEA;
+            background: white;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -26,21 +26,58 @@
             padding: 20px;
             border-radius: 2px;
             background: rgb(27, 52, 85);
-            margin-bottom: 20px;
+            margin-bottom: 90px;
             border-radius: 10px;
-            margin-left: 100px;
         }
-        @media(max-width: 955px){
-            .menu{
-                transform: translateX(-100%);
-                transition: transform 0.3s ease-in-out;       
-             }
+        @media(max-width: 880px){
             .hamburgertastytasty{
-                display: block;
-                margin-top: 30px;
+                float: right;
+                padding-right: 20px;
+                padding-top: 28px;
             }
             .hamburgertastytasty .line{
+                width: 29px;
+                height: 5px;
+                background-color: rgb(27, 52, 85);
+                margin-bottom: 5px;
                 display: block;
+                border-radius: 50px;
+            }
+            .calculator{
+            padding: 20px;
+            border-radius: 2px;
+            background: rgb(27, 52, 85);
+            margin-bottom: 90px;
+            margin-left: 110px;
+            border-radius: 10px;
+        }
+            nav ul{
+                position: fixed;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: #7F6FEA;
+                top: 80px;
+                left: -100%;
+            }
+            nav ul li{
+                display: block;
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                top: -100px;
+            }
+            nav ul#links li a{
+                color: rgb(255, 255, 255);
+            }
+            nav ul#links li a:hover{
+              background: white;
+              color: #7F6FEA;
+            }
+            nav ul#links li button{
+              box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(27, 52, 85) 0px 0px 0px 3px;
+              background: white;
+              color: rgb(27, 52, 80);
             }
         }
         .calculator form input{
@@ -83,76 +120,69 @@
         .hamburgertastytasty:hover{
             cursor: pointer;
         }
-        .menu{
-  position: absolute;
-  height: 100%;
-  left: 0;
-  width: 280px;
-  background: rgb(27, 52, 85);
-  z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  display: block;
+        nav{
+    height: 80px;
+    background: rgb(255, 255, 255);
+    max-width: 1349px;
 }
-.menu header img{
-  display: flex;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  line-height: 900px;
-  user-select: none;
-  background: rgb(27, 52, 85);
-  width: 280px;
+nav ul{
+    float: right;
+    margin-right: 50px;
+
 }
-.menu ul a{
-  display: block;
-  width: 100%;
-  height: 100%;
-  line-height: 78px;
-  font-size: 23px;
-  color: rgb(255, 255, 255);
-  padding-left: 50px;
-  box-sizing: border-box;
-  border-radius: 1px;
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
 }
-ul li:hover a{
-  background: rgb(255, 255, 255);
-  transition: .2s ease;
-  color: #7F6FEA;
+nav ul li a{
+    position: relative;
+    color: #7F6FEA;
+    font-size: 19px;
 }
-.menu ul a i{
-  margin-right: 17px;
+nav img{
+    width: 158px;
+    position: absolute;
+    top: 10px;
+    left: 7%;
+    border-radius: 5px;
+    
 }
-.hamburgertastytasty {
-  position: absolute;
-  top: 10px;
-  right: -40px;
-  width: 30px;
-  height: 30px;
+nav ul li a{
+    padding: 8.5px;
+    border-radius: 2px;
 }
-.hamburgertastytasty .line{
-                width: 29px;
-                height: 5px;
-                background-color: rgb(255, 255, 255);
-                margin-bottom: 5px;
-                border-radius: 50px;
-            }
+nav ul li a:hover{
+    background: #7F6FEA;
+    border-radius: 2px;
+    transition: .4s ease;
+    color: rgb(255, 255, 255);
+}
+.fa-solid{
+    margin-right: 5px;
+}
  </style>
     <title>Swift</title>
 </head>
 <body>
     
-    <div class="menu" id="sidebar">
-        <header><img src="SwiftStandardmodeLogo.png" alt="Swift" id="imghaha" onclick="clickimage()"></header>
-        <ul id="links">
-            <li><a href="updates.html"><i class="fa-solid fa-arrow-up"></i></i>Swift Updates</a></li>
-            <li><a href="#"><i class="fa-solid fa-microphone"></i>Voice Input</a></li>
-            <li><a href="#"><i class="fa-solid fa-camera-retro"></i>Image Input</a></li>
-            <li><a href="products.html"><i class="fa-solid fa-plus"></i>Explore More</a></li>
-        </ul>
-        <div class="hamburgertastytasty" onclick="shownavbarplease()">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
+    <nav>
+        <img src="SwiftBlackLogo.png">
+         
+                <ul id="links">
+                  
+                    <li><a href="updates.html"><i class="fa-solid fa-arrow-up"></i>Updates</a></li>
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i>Voice Input</a></li>
+                    <li><a href="#"><i class="fa-solid fa-camera-retro"></i>Image Input</a></li>
+                    <li><a href="products.html"><i class="fa-solid fa-plus"></i>Explore More</a></li>
+  
+                </ul>
+                <div class="hamburgertastytasty" onclick="shownavbarplease()">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+              </div>
+            </nav>
        </div>
     <div class="container">
       <div class="calculator">
@@ -193,13 +223,13 @@ ul li:hover a{
       </div>
     </div>
     <script>
-   function shownavbarplease(){
-        const links = document.getElementById('sidebar');
-        if(links.style.transform === "translateX(-100%)"){
-            links.style.transform = "translateX(0)"
+ function shownavbarplease(){
+        const links = document.getElementById('links');
+        if(links.style.left === '-100%'){
+            links.style.left = 0;
             links.style.transition = '.5s ease'
         } else{
-            links.style.transform = "translateX(-100%)"
+            links.style.left = '-100%';
         }
       }
     </script>
