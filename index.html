@@ -21,10 +21,15 @@ body{
     margin: 0;
     padding: 0;
 }
+.img{
+    width: 629px;
+    margin-left: 45px;
+    border-radius: 2px;
+}
 .hamburgertastytasty:hover{
             cursor: pointer;
         }
-        @media(max-width: 768px){
+        @media(max-width: 830px){
             nav ul{
                 position: fixed;
                 left: 0;
@@ -67,7 +72,25 @@ body{
                 border-radius: 50px;
             }
             .head button{
-              width: 700px;
+              padding: 25px 1200px;
+            }
+            .para{
+              text-align: center;
+            }
+        }
+        @media(max-width: 470px){
+          p.ceo{
+            text-align: left;
+          }
+        }
+          @media(max-width: 768px){
+          p.ceo{
+            text-align: left;
+          }
+        }
+         @media(max-width: 1400px){
+            footer{
+              bottom: -10000000px;
             }
         }
 *{
@@ -104,7 +127,6 @@ nav img{
     top: 17px;
     left: 7%;
     border-radius: 5px;
-    
 }
 h1{
      font-family: montserrat;
@@ -242,110 +264,6 @@ a{
     .container{
         padding: 20px;
     }
-}
-footer{
-  position: absolute;
-  background: #000000;
-  width: 100%;
-  left: 0;
-  bottom: -5000px;
-}
-footer .bottom-details{
-  width: 100%;
-  background: rgb(27, 52, 85);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-footer .bottom-details .bottom_text{
-  max-width: 1250px;
-  margin: auto;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-}
-.bottom-details .bottom_text span,
-.bottom-details .bottom_text a{
-  font-size: 15px;
-  font-weight: 300;
-  color: #ffffff;
-  opacity: 1;
-  text-decoration: none;
-}
-.bottom-details .bottom_text .hi:hover{
-  opacity: 1;
-}
-.bottom-details .bottom_text .hello:hover{
-  opacity: 1;
-}
-.bottom-details .bottom_text a{
-  margin-right: 10px;
-}
-@media (max-width: 900px) {
-  footer .content .link-boxes{
-    flex-wrap: wrap;
-  }
-  footer .content .link-boxes .input-box{
-    width: 40%;
-    margin-top: 10px;
-  }
-}
-@media (max-width: 700px){
-  footer{
-    position: relative;
-  }
-  .content .top .logo-details{
-    font-size: 26px;
-  }
-  .content .top .media-icons a{
-    height: 35px;
-    width: 35px;
-    font-size: 14px;
-    line-height: 35px;
-  }
-  footer .content .link-boxes .box{
-    width: calc(100% / 3 - 10px);
-  }
-  footer .content .link-boxes .input-box{
-    width: 60%;
-  }
-  .bottom-details .bottom_text span,
-  .bottom-details .bottom_text a{
-    font-size: 12px;
-  }
-}
-@media (max-width: 520px){
-  footer::before{
-    top: 145px;
-  }
-  footer .content .top{
-    flex-direction: column;
-  }
-  .content .top .media-icons{
-    margin-top: 16px;
-  }
-  footer .content .link-boxes .box{
-    width: calc(100% / 2 - 10px);
-  }
-  footer .content .link-boxes .input-box{
-    width: 100%;
-  }
-}
-@media(max-width: 768px){
-  .head button{
-    padding: 15px 200px;
-  }
-  footer{
-     bottom: -7000px;
-  }
-}
-@media(max-width: 500px){
-  footer{
-     bottom: -200px;
-  }
-}
-@media(max-width: 700px){
-  footer{
-     bottom: -100px;
-  }
 }
 div{
   display: block;
@@ -600,7 +518,7 @@ width: 600px;
        <div class="box">
           <img src="DynamicLogo.png">
           <h4>Introducing Dynamic</h4>
-          <p class="p">Your most easy and convinient helper for checking the Dynamic weathers of the world, Explore Dynamic! Now on Galaxee!
+          <p class="p">Your most easy and convinient helper for checking the Dynamic weathers of the world, Explore Dynamic! on Galaxee!
           </p>
        </p>
        <a href="" class="btns">Explore Dynamic</a>
@@ -630,8 +548,8 @@ width: 600px;
           <a href="" class="btns">Explore Elite</a>
        </div>
        <div class="box">
-          <img src="ExciteLogo.png">
-          <h4>Introducing Excite</h4>
+          <img src="vast.png">
+          <h4>Introducing Vast</h4>
           <p class="p">Your bro, who will make you feel excited all the time, enjoying it always with him, explore it now on Galaxee</p>
           </p>
           <a href="" class="btns">Explore Excite</a>
@@ -640,18 +558,8 @@ width: 600px;
 </div>
 <div class="end-text"><h1>The Glowry will make everyone's Heart Glow! All the Best! Everyone!
 </h1> <p class="ceo">- SarveshJayakandan CEO of Glowry</p></div>
- 
- <footer>
-    <div class="bottom-details">
-      <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2023 <a href="index.html">Glowry</a>All Rights Reserved</span>
-        <span class="policy_terms">
-          <a href="pp.html" class="hi">Privacy policy</a>
-          <a href="tp.html" class="hello">Terms & condition</a>
-        </span>
-      </div>
-    </div>
-  </footer>
+<img src="SarveshJayakandan.png" class="img">
+<img src="Brandp.png" width="629px" style="border-radius: 2px;">
  <script src="https://kit.fontawesome.com/b6729b5f76.js" crossorigin="anonymous"></script>
  <script>
     function shownavbarplease(){
