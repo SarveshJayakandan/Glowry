@@ -1,19 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<hcontainer>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="initial-scale">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arivalligal.com</title>
-    <link rel="shortcut icon" href="arivali.png">
-    
+    <meta name="keywords" content="ndt">
+    <meta name="keywords" content="what is ndt">
+    <meta name="keywords" content="calculator">
+    <meta name="keywords" content="glowry">
+    <meta name="keywords" content="ndt methods">
+    <meta name="keywords" content="types of ndt">
+    <link rel="icon" href="GLFAVICON.png">
+    <title>Glowry</title>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
-    .container img{
-    width: 100%;
-    height: 600px;
-    border: none;
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(247, 247, 247);
+    margin: 0;
+    padding: 0;
 }
+.img{
+    width: 629px;
+    margin-left: 45px;
+    border-radius: 2px;
+}
+.hamburgertastytasty:hover{
+            cursor: pointer;
+        }
+        @media(max-width: 830px){
+            nav ul{
+                position: fixed;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: rgb(27, 52, 85);
+                top: 80px;
+                left: -100%;
+            }
+            nav ul li{
+                display: block;
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                top: -100px;
+            }
+            nav ul#links li a{
+                color: rgb(255, 255, 255);
+            }
+            nav ul#links li a:hover{
+              background: white;
+              color: rgb(27, 52, 80);
+            }
+            nav ul#links li button{
+              box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(27, 52, 85) 0px 0px 0px 3px;
+              background: white;
+              color: rgb(27, 52, 80);
+            }
+            .hamburgertastytasty{
+                float: right;
+                padding-right: 20px;
+                padding-top: 28px;
+            }
+            .hamburgertastytasty .line{
+                width: 29px;
+                height: 5px;
+                background-color: rgb(27, 52, 85);
+                margin-bottom: 5px;
+                display: block;
+                border-radius: 50px;
+            }
+            .head button{
+              padding: 25px 1200px;
+            }
+            .para{
+              text-align: center;
+            }
+        }
+        @media(max-width: 470px){
+          p.ceo{
+            text-align: left;
+          }
+        }
+          @media(max-width: 768px){
+          p.ceo{
+            text-align: left;
+          }
+        }
+         @media(max-width: 1400px){
+            footer{
+              bottom: -10000000px;
+            }
+        }
 *{
     margin: 0;
     padding: 0;
@@ -23,8 +102,8 @@
 }
 nav{
     height: 80px;
-    background-color: #000000;
-background-image: linear-gradient(315deg, #414141 0%, #000000 74%);
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     max-width: 1349px;
 }
 nav ul{
@@ -39,27 +118,16 @@ nav ul li{
 }
 nav ul li a{
     position: relative;
-    color: rgb(255, 255, 255);
+    color: rgb(75, 75, 75);
     font-size: 19px;
 }
-nav li a:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 3px;
-            background-color: #fff;
-            bottom: -1px;
-            left: 0;
-            opacity: 0;
-            transform: scaleX(0);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
-
-        nav li a:hover:before {
-            opacity: 1;
-            transform: scaleX(1);
-        }
-
+nav img{
+    width: 158px;
+    position: absolute;
+    top: 17px;
+    left: 7%;
+    border-radius: 5px;
+}
 h1{
      font-family: montserrat;
      font: 2em;
@@ -87,34 +155,243 @@ nav ul li a{
     padding: 8.5px;
     border-radius: 2px;
 }
-nav h1{
-    position: absolute;
-    top: -18px;
-    left: 5%;
-    color: white;
-    font-size: 30px;
-    text-transform: uppercase;
+nav ul li a:hover{
+    background: rgb(27, 52, 85);
+    border-radius: 2px;
+    transition: .4s ease;
+    color: rgb(255, 255, 255);
 }
-nav img{
-    width: 350px;
-    position: absolute;
-    top: 5px;
-    left: 7%;
+p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 23px;
+    margin-bottom: 2%;
+    font-family: montserrat;
 }
-.container img{
+nav ul li button{
+  background-color: rgb(27, 52, 85);
+  border-radius: 2px;
+  cursor: pointer;
+  color: white;
+  font-family: montserrat;
+  font-size: 18px;
+  padding: 8px 15px;
+  position: relative;
+  transition: all 250ms;
+  outline: none;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+nav ul li button:hover,nav ul li button:focus{
+  background-color: rgb(27, 52, 80);
+  transform: translateY(0);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+nav ul li button:active{
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+nav ul li button:hover{
+  transform: translateY(-1px);
+}
+.head button{
+  color: rgb(27, 52, 85);
+  border: 6px solid rgb(27, 52, 85);
+  padding: 15px 550px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: large;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
+  font-family: montserrat;
+  margin-bottom: 50px;
+  transition: .3s ease;
+  border-radius: 2px;
+}
+.head button:hover{
+    background-color: rgb(27, 52, 85);
+    color: #ffffff;
+}
+.head img{
     width: 100%;
     height: 700px;
 }
+a{
+    color: rgb(53, 53, 53);
+}
+.container{
+    padding: 15px 9%;
+    padding-bottom: 10px;
+}
+.container .heading{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.container .boxc{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+.container .boxc .box{
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+    padding: 30px 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.container .boxc .box:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.03);
+    transition: .1s;
+    animation: 3s ease-in 1s infinite;
+
+}
+.container .boxc .box img{
+   height: 80px;
+}
+.container .boxc .box h4{
+    font-size: 23px;
+    padding: 10px 0;
+}
+.container .boxc .box p{
+    font-size: 15px;
+    line-height: 1.8;
+}
+@media(max-width: 768px){
+    .container{
+        padding: 20px;
+    }
+}
+div{
+  display: block;
+}
+hr{
+  color: white;
+}
+.head .container-what{
+ background: rgb(27, 52, 85);
+ padding: 30px;
+ border-radius: 2px;
+ color: white;
+ margin-top: -5px;
+}
+.head .container-what h3{
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 23px;
+  line-height: 1.2;
+}
+.head .container-what p{
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+.linklearnmore{
+  text-align: center;
+}
+.linklearnmore a{
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  background: rgb(221, 221, 221);
+  border-radius: 50px;
+  font-weight: 400;
+}
+.linklearnmore a{
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 36px;
+
+}
+.linklearnmore a:hover{
+  color: rgb(28, 50, 75);
+  background-color: rgb(255, 255, 255);
+  transition: .4s ease;
+  background-position: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.text{
+  text-align: center;
+}
+.text .para{
+  margin-top: 20px;
+}
+.blast{
+background: rgb(255, 255, 255);
+width: 600px;
+ border-radius: 2px;
+ color: rgb(24, 24, 24);
+ margin-top: 20px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ margin-left: 36px;
+ height: 200px;
+ padding: 10px;
+ border-radius: 5px;
+ display: inline-block;
+ vertical-align: top;
+ transition: .2s ease;
+}
+.blast:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px,
+  rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(27, 52, 85) 0px 0px 0px 3px;
+  user-select: none;
+}
+.blast h3{
+  text-shadow: 1px 1px 2px rgb(241, 241, 241);
+  margin-top: 10px;
+}
+.blast p{
+  margin-bottom: 20px;
+  color: rgb(73, 73, 73);
+}
+.container .boxc .box .btns{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 50px;
+    background: rgb(34, 56, 250);
+    color: white;
+    font-size: 17px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .container .boxc .box .btns:hover{
+    background-color: rgb(0, 24, 238);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(25, 0, 255) 0px 0px 0px 2.3px;
+  }
+  .end-text{
+    margin-left: 45px;
+    color: rgb(27, 52, 85);
+    margin-top: 50px;
+  }
+  .ceo{
+    text-align: right;
+    margin-right: 145px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgb(212, 212, 212);
+}
 </style>
 <body>
+
     <nav>
-        <img src="Arivaligallogo.png">
+      <img src="GLLOGO.png">
+       
               <ul id="links">
-                <li><a href="index.html">Home</a></li>
-                  <li><a href="aboutarivalligal.html">About</a></li>
-                  <li><a href="#">Attemt Quiz</a></li>
-                  <li><a href="#">Fun Games</a></li>
-                  <li><a href="#">Question Paper</a></li>
+                
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="home.html">Feel Vast</a></li>
+                  <li><a href="https://www.vnsndt.com/">Experience Vibrant</a></li>
+                  <li><a href="galaxee.html">Explore Galaxee</a></li>
+                  <li><button onclick="window.location.href = 'login.html'">Sign Up</button></li>
+                  <li><button onclick="window.location.href = 'Signup.html'">Sign In</button></li>
+
               </ul>
               <div class="hamburgertastytasty" onclick="shownavbarplease()">
                 <span class="line"></span>
@@ -122,8 +399,178 @@ nav img{
                 <span class="line"></span>
             </div>
           </nav>
-        <div class="container">
-            <img src="Arivallibg.png" alt="Arivalligal.com BG">
-        </div>
+
+ <div class="head">
+    <img src="Glowrybg.png">
+ <div class="container-what">
+  <h3>What is Glowry?</h3>
+  <p>
+    Glowry is an initiative started by Sarvesh Jayakandan and J.S. Sri Hari, Its Ultimate Motive is to approach the NDT world as a more productive and effective one, Which will be experienced by learning and appplying it on jobs and improving the skills, Learning and practicing is the key to success, remembering this, We started an idea to teach others using the internet using Glowry and the interactive way giving you the Certification and the Skills you need! Welcome to Glowry!</p>
+ <div class="linklearnmore">
+  <a href="about.html" class="leanrmore">Learn More   <i class="fa-solid fa-chevron-right"></i></a>
+ </div>
+</div>
+<hr>
+<div class="blast"> 
+  <h3>Why It was Innovated?</h3>
+  <p>
+   The Main Motive was not of bringing education first, but when the reality hit, we understood how important and how it can change human's life, made us to innovate an educational website for the NDT Career!</p>
+ <div class="linklearnmore">
+ </div>
+</div>
+<div class="blast"> 
+  <h3>It was Innovated by Whom?</h3>
+  <p>
+  The Starting Stage of this idea, I had J.S.SriHari who gave his efforts and made this much, I Really thank him for this help, The ideas evolved into this whole website and the Platform! It was only vision - NDT!</p>
+ <div class="linklearnmore">
+ </div>
+ 
+</div>
+
+
+   <button onclick="window.location.href='Signup.html';" class="hi">Experience Glowry!</button>
+   <h1>Lets us Start our Journey to NDT! First of all What is NDT?</h1> <br>
+   <p>Non-destructive testing (NDT) is a testing and analysis technique used by industry to evaluate the properties of a material, component, structure or system for characteristic differences or welding defects and discontinuities without causing damage to the original part. NDT is also known as non-destructive examination (NDE), non-destructive inspection (NDI) and non-destructive evaluation (NDE).</p></i>
+   <h1>Now, Let us look about the types of NDT:</h1>
+   <h2>These Methods Include  <b> Acoustic Emission Testing (AE):</b></h2>
+   <p> Accoustic emission (AE) is the phenomenon of radiation of acoustic (elastic) waves in solids that occurs when a material undergoes irreversible changes in its internal structure, for example as a result of crack formation or plastic deformation due to aging, temperature gradients, or external mechanical forces. The waves generated by sources of AE are of practical interest in structural health monitoring (SHM), quality control, system feedback, process monitoring, and other fields. In SHM applications, AE is typically used to detect, locate, and characterise, damage.</i></p>
+   <h2>Leak Testing:</h2>
+   <p>Leak testing is a procedure used to detect leaks in containers, pipes, and other objects. It is used in a variety of industries, including aerospace, automotive, and medical. Here are few types of it, and also The method of leak testing that is used will depend on the size and type of object being tested, as well as the sensitivity of the test.</p>
+   <h3>Bubble Leak Testing:</h3>
+   <p>Bubble leak testing uses a tank of liquid, or a soap solution for larger parts, to detect gas (usually air) leaking from the test piece in the form of bubbles. Only used on closed systems, pressure change testing uses either pressure or a vacuum to monitor the test piece. A loss of pressure or vacuum over a set time span will show that there is a leak in the system.</p>
+  <h3>Halogen Diode Testing:</h3>
+  <p>Halogen diode testing also uses pressure to find leaks, except in this case air and a halogen-based tracer gas are mixed together and a halogen diode detection unit (or 'sniffer') is used to locate any leaks.</p>
+  <h3>Mass Spectrometer Testing:</h3>
+  <p>Mass spectrometer testing uses helium or a helium-air mix inside a test chamber with a 'sniffer' to detect any changes in the air sample, which would indicate a leak. Alternatively, a vacuum can be used, in which case the mass spectrometer will sample the vacuum chamber to detect ionised helium, which will show that there has been a leak.</p>
+   <h2>Liquid Penetrant Testing (PT):</h2>
+   <p>Liquid Penetrant testing works on the basic principle of capillary action, Liquid penetrant testing involves the application of a fluid with low viscosity to the material to be tested. This fluid seeps into any defects such as cracks or porosity before a developer is applied which allows the penetrant liquid to seep upwards and create a visible indication of the flaw. The tests can be conducted by using solvent removable penetrants, water washable penetrants or post-emulsifiable penetrants.</p>
+   <h2>Eddy Current Separater:</h2>
+   <p>An eddy current separator (ECS) is a machine that uses a powerful magnetic field to separate non-ferrous metals from an input waste or ore stream. The device makes use of eddy currents to effect the separation. Non-ferrous metals typically separated by an ECS include aluminum, copper and die-cast metals. In waste processing, ECS is used after all ferrous metals have been removed previously by some arrangement of magnets. In mining, ECS is sometimes also used to separate metals from mined ore.</p>
+   <h2>Ultra Sonic Testing (UT):</h2>
+   <p>Ultrasonic Testing entails the transmission of high frequency sound into a material to interact with features within the material that reflect or attenuate it. Ultrasonic testing is broadly divided into Pulse Echo (PE), Through Transmission (TT) and Time of Flight Diffraction (ToFD). Typically the UT inspection system consists of a ultrasonic transducer, pulser/receiver, and display unit.</p>
+   <h2>Magnetic Particle Inspection (MPI):</h2>
+   <p>This NDT process uses magnetic fields to find discontinuities at or near the surface of ferromagnetic materials. (Ferromagnetic materials such as iron, nickel, cobalt, and some of their alloys) The magnetic field can be created with a permanent magnet or an electromagnet, which requires a current to be applied. The magnetic field will highlight any discontinuities as the magnetic flux lines produce leakage, which can be seen by using magnetic particles that are drawn into the discontinuity.</p>
+  </div>
+ </div>
+ <div class="container">
+    <h1 class="heading">A Few More Of NDT!</h1>
+    <p class="paragraphvisbleinvisible">Glowry is always a Few More always, Feel free to explore everything, everywhere all!</p>
+    <div class="boxc">
+        <div class="box">
+            <img src="download.png">
+            <h4>Radiographic Testing</h4>
+            <p class="p">Radiographic testing uses x-rays or gamma rays to create images of the internal structure of a material.</p>
+            </p>
+         </div>
+         <div class="box">
+            <img src="download (1).jpeg">
+            <h4>Infrared Testing</h4>
+            <p class="p">Infrared testing is a non-destructive testing method that uses infrared cameras to detect heat signatures.</p>
+         </p>
+         </div>
+         <div class="box">
+            <img src="download (6).jpeg">
+            <h4>Full Matrix Capture</h4>
+            <p class="p">FMC testing is a NDT technique that collects data from all possible transmit-receive combinations.</p>
+            </p>
+         </div>
+         <div class="box">
+            <img src="download (3).jpeg">
+            <h4>Visual Inspection</h4>
+            <p class="p">Visual inspection is the process of examining a product or material with the naked eye to identify defects.
+
+            </p>
+    
+            </p>
+         </div>
+         <div class="box">
+            <img src="download (4).jpeg">
+            <h4>Magnetic Flux Leakage</h4>
+            <p class="p">Magnetic flux leakage uses a magnetic field to detect defects in ferromagnetic materials.</p>
+      
+            </p>
+         </div>
+         <div class="box">
+            <img src="download (5).jpeg">
+            <h4>Vibration Analysis</h4>
+            <p class="p">Vibration analysis is a non-destructive testing method that uses sensors to measure the vibrations of a machine or structure.
+
+            </p>
+    
+            </p>
+         </div>
+    </div>
+ </div>
+ <div class="text">
+  <h1>Our New Platform: Meet Galaxee</h1>
+ <div class="para"><p>The platform where all your needs are in a single place! Now Explore the Galaxee!</p></div>
+ </div>
+ <div class="container">
+  <h1 class="heading">Explore The Galaxee!</h1>
+  <div class="boxc">
+      <div class="box">
+          <img src="SwiftLogo.png">
+          <h4>Introducing Swift</h4>
+          <p class="p">Your most efficient collaborator for calculating numbers with voices and images and manually, Explore Swift now on Galaxee</p>
+          </p>
+         <a href="Swift.html" class="btns">Explore Swift</a>
+       </div>
+       <div class="box">
+          <img src="DynamicLogo.png">
+          <h4>Introducing Dynamic</h4>
+          <p class="p">Your most easy and convinient helper for checking the Dynamic weathers of the world, Explore Dynamic! on Galaxee!
+          </p>
+       </p>
+       <a href="" class="btns">Explore Dynamic</a>
+       </div>
+       <div class="box">
+          <img src="Tempo.png">
+          <h4>Introducing Tempo</h4>
+          <p class="p">Your most enjoyable teacher, for seeing the unstoppable time, Stay in touch with it, A whole lot Explore it now on Galaxee</p>
+          </p>
+          <a href="" class="btns">Explore Tempo</a>
+       </div>
+       <div class="box">
+          <img src="TurboLogo.png">
+          <h4>Introducing Turbo</h4>
+          <p class="p">Your, Super-Charged, Calendar for your work, school, and even plannings for holidays, etc, Explore it now on Galaxee</p>
+
+          </p>
+  
+          <a href="" class="btns">Explore Turbo</a>
+       </div>
+       <div class="box">
+          <img src="EliteLogo.png">
+          <h4>Introducing Elite</h4>
+          <p class="p">Your best friend for speaking various of your dreamed elite languages, learn, explore the Elite now on Galaxee</p>
+    
+          </p>
+          <a href="" class="btns">Explore Elite</a>
+       </div>
+       <div class="box">
+          <img src="vast.png">
+          <h4>Introducing Vast</h4>
+          <p class="p">Your bro, who will make you feel excited all the time, enjoying it always with him, explore it now on Galaxee</p>
+          </p>
+          <a href="" class="btns">Explore Excite</a>
+       </div>
+  </div>
+</div>
+<div class="end-text"><h1>The Glowry will make everyone's Heart Glow! All the Best! Everyone!
+</h1> <p class="ceo">- SarveshJayakandan CEO of Glowry</p></div>
+<img src="SarveshJayakandan.png" class="img">
+<img src="Brandp.png" width="629px" style="border-radius: 2px;">
+ <script src="https://kit.fontawesome.com/b6729b5f76.js" crossorigin="anonymous"></script>
+ <script>
+    function shownavbarplease(){
+        const links = document.getElementById('links');
+        if(links.style.left === '-100%'){
+            links.style.left = 0;
+            links.style.transition = '.5s ease'
+        } else{
+            links.style.left = '-100%';
+        }
+      }
+ </script>
 </body>
 </html>
